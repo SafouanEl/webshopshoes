@@ -1,0 +1,110 @@
+[
+  {
+    "id": "new-balance-9060-moonrock-linen",
+    "name": "New Balance 9060 moonrock linen",
+    "brand": "New Balance",
+    "model": "9060",
+    "color": "Moonrock/Linen",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/new-balance/9060/moonrock-linen/new-balance-9060-moonrock-linen.jpeg",
+    "gallery": [
+      "/assets/new-balance/9060/moonrock-linen/new-balance-9060-moonrock-linen-front.jpeg",
+      "/assets/new-balance/9060/moonrock-linen/new-balance-9060-moonrock-linen-back.jpeg",
+      "/assets/new-balance/9060/moonrock-linen/new-balance-9060-moonrock-linen-sole.jpeg",
+      "/assets/new-balance/9060/moonrock-linen/new-balance-9060-moonrock-linen-show1.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 9060 Moonrock/Linen combineert retrostijl met futuristische demping voor dagelijks comfort.",
+    "category": "sneakers",
+    "tags": ["new balance", "9060", "retro", "comfort", "lifestyle"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-9060-mushroom-brown",
+    "name": "New Balance 9060 mushroom brown",
+    "brand": "New Balance",
+    "model": "9060",
+    "color": "Mushroom Brown",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/new-balance/9060/mushroom-brown/new-balance-9060-mushroom-brown.jpeg",
+    "gallery": [
+      "/assets/new-balance/9060/mushroom-brown/new-balance-9060-mushroom-brown-front.jpeg",
+      "/assets/new-balance/9060/mushroom-brown/new-balance-9060-mushroom-brown-back.jpeg",
+      "/assets/new-balance/9060/mushroom-brown/new-balance-9060-mushroom-brown-sole.jpeg",
+      "/assets/new-balance/9060/mushroom-brown/new-balance-9060-mushroom-brown-show1.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 9060 Mushroom Brown biedt een aardse tint en moderne demping in een stijlvol silhouet.",
+    "category": "sneakers",
+    "tags": ["new balance", "9060", "earth tone", "fashion", "comfort"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-9060-pink-overdye",
+    "name": "New Balance 9060 pink overdye",
+    "brand": "New Balance",
+    "model": "9060",
+    "color": "Pink Overdye",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/new-balance/9060/pink-overdry/new-balance-9060-pink-overdye.jpeg",
+    "gallery": [
+      "/assets/new-balance/9060/pink-overdry/new-balance-9060-pink-overdye-front.jpeg",
+      "/assets/new-balance/9060/pink-overdry/new-balance-9060-pink-overdye-back.jpeg",
+      "/assets/new-balance/9060/pink-overdry/new-balance-9060-pink-overdye-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De opvallende Pink Overdye kleur maakt deze New Balance 9060 een statement-sneaker met topcomfort.",
+    "category": "sneakers",
+    "tags": ["new balance", "9060", "pink", "statement", "vrouw"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-9060-quartz-grey",
+    "name": "New Balance 9060 quartz grey",
+    "brand": "New Balance",
+    "model": "9060",
+    "color": "Quartz Grey",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
+    "image": "/assets/new-balance/9060/quartz-grey/new-balance-9060-quartz-grey.jpeg",
+    "gallery": [
+      "/assets/new-balance/9060/quartz-grey/new-balance-9060-quartz-grey-front.jpeg",
+      "/assets/new-balance/9060/quartz-grey/new-balance-9060-quartz-grey-back.jpeg",
+      "/assets/new-balance/9060/quartz-grey/new-balance-9060-quartz-grey-sole.jpeg",
+      "/assets/new-balance/9060/quartz-grey/new-balance-9060-quartz-grey-show.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Minimalistisch design ontmoet moderne technologie in de Quartz Grey New Balance 9060.",
+    "category": "sneakers",
+    "tags": ["new balance", "9060", "grey", "tech", "minimal"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-9060-sea-salt-white",
+    "name": "New Balance 9060 sea salt white",
+    "brand": "New Balance",
+    "model": "9060",
+    "color": "Sea Salt/White",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/new-balance/9060/sea-salt-white/new-balance-9060-sea-salt-white.jpeg",
+    "gallery": [
+      "/assets/new-balance/9060/sea-salt-white/new-balance-9060-sea-salt-white-front.jpeg",
+      "/assets/new-balance/9060/sea-salt-white/new-balance-9060-sea-salt-white-back.jpeg",
+      "/assets/new-balance/9060/sea-salt-white/new-balance-9060-sea-salt-white-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Sea Salt/White uitvoering van de 9060 biedt een frisse look met iconische New Balance comfort.",
+    "category": "sneakers",
+    "tags": ["new balance", "9060", "sea salt", "white", "clean"],
+    "featured": true,
+    "hidden": false
+  }
+]

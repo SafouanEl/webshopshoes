@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ugg-ultra-mini-antilope",
+    "name": "UGG Classic Ultra Mini Boot",
+    "brand": "UGG",
+    "model": "Ultra Mini",
+    "color": "Antilope",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/ugg/ultra mini/antilope/ugg-classic-ultra-mini-boot-antilope.jpeg",
+    "gallery": [
+      "/assets/ugg/ultra mini/antilope/ugg-classic-ultra-mini-boot-antilope-front.jpeg",
+      "/assets/ugg/ultra mini/antilope/ugg-classic-ultra-mini-boot-antilope-back.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De UGG Classic Ultra Mini Boot in Antilope is een iconische lage laars met een minimalistisch silhouet en maximaal comfort.",
+    "category": "laarzen",
+    "tags": ["ugg", "ultra mini", "laarzen", "winter", "comfort"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "ugg-ultra-mini-black",
+    "name": "UGG Classic Ultra Mini Boot",
+    "brand": "UGG",
+    "model": "Ultra Mini",
+    "color": "Black",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/ugg/ultra mini/black/ugg-classic-ultra-mini-boot-black.jpeg",
+    "gallery": [],
+    "gender": ["dames"],
+    "description": "De UGG Classic Ultra Mini Boot in Black is een stijlvolle en warme winterlaars met een kort model en zachte voering.",
+    "category": "laarzen",
+    "tags": ["ugg", "ultra mini", "laarzen", "zwart", "winter"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "ugg-ultra-mini-chestnut",
+    "name": "UGG Classic Ultra Mini Boot",
+    "brand": "UGG",
+    "model": "Ultra Mini",
+    "color": "Chestnut",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/ugg/ultra mini/chastnut/ugg-classic-ultra-mini-boot-chestnut.jpeg",
+    "gallery": [
+      "/assets/ugg/ultra mini/chastnut/ugg-classic-ultra-mini-boot-chestnut-front.jpeg",
+      "/assets/ugg/ultra mini/chastnut/ugg-classic-ultra-mini-boot-chestnut-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De UGG Classic Ultra Mini Boot in Chestnut is een klassieker onder de UGG’s, geliefd om zijn warme voering en tijdloze look.",
+    "category": "laarzen",
+    "tags": ["ugg", "ultra mini", "chestnut", "laarzen", "winter"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "ugg-ultra-mini-goat",
+    "name": "UGG Classic Ultra Mini Boot",
+    "brand": "UGG",
+    "model": "Ultra Mini",
+    "color": "Goat",
+    "price": 159.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/ugg/ultra mini/goat/ugg-classic-ultra-mini-boot-goat.jpeg",
+    "gallery": [],
+    "gender": ["dames"],
+    "description": "De UGG Classic Ultra Mini Boot in de kleur Goat is perfect voor wie op zoek is naar een subtiele en veelzijdige UGG-stijl.",
+    "category": "laarzen",
+    "tags": ["ugg", "ultra mini", "neutraal", "laarzen", "winter"],
+    "featured": false,
+    "hidden": false
+  }
+]

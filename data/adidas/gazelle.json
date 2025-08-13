@@ -1,0 +1,72 @@
+[
+  {
+    "id": "gazelle-bold-liberty-london",
+    "name": "Adidas Gazelle Bold Liberty London",
+    "brand": "Adidas",
+    "model": "Gazelle",
+    "color": "Black/Floral",
+    "price": 119.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/adidas/gazelle/bold-liberty/adidas-gazelle-bold-liberty-london-floral-embroidery.jpeg",
+    "gallery": [
+      "/assets/adidas/gazelle/bold-liberty/adidas-gazelle-bold-liberty-london-floral-embroidery-front.jpeg",
+      "/assets/adidas/gazelle/bold-liberty/adidas-gazelle-bold-liberty-london-floral-embroidery-back.jpeg",
+      "/assets/adidas/gazelle/bold-liberty/adidas-gazelle-bold-liberty-london-floral-embroidery-sole.jpeg",
+      "/assets/adidas/gazelle/bold-liberty/adidas-gazelle-bold-liberty-london-floral-embroidery-show1.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De Gazelle Bold Liberty London is een unieke samenwerking met een bloemenprint vol karakter. Ideaal voor wie durft op te vallen.",
+    "category": "sneakers",
+    "tags": ["bold", "floral", "limited", "adidas", "dames"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gazelle-bold-wonder-quartz",
+    "name": "Adidas Gazelle Bold Wonder Quartz",
+    "brand": "Adidas",
+    "model": "Gazelle",
+    "color": "Wonder Quartz/Black",
+    "price": 119.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum.jpeg",
+    "gallery": [
+      "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum-front.jpeg",
+      "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum-back.jpeg",
+      "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum-sole.jpeg",
+      "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum-show1.jpeg",
+      "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum-show2.jpeg",
+      "/assets/adidas/gazelle/bold-wonder/adidas-gazelle-bold-wonder-quartz-black-gum-show3.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De Gazelle Bold Wonder Quartz is een elegante sneaker met een moderne uitstraling, suède afwerking en stevige plateauzool.",
+    "category": "sneakers",
+    "tags": ["platform", "beige", "minimalistisch", "dames", "adidas"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gazelle-indoor-cream-white",
+    "name": "Adidas Gazelle Indoor Cream White",
+    "brand": "Adidas",
+    "model": "Gazelle",
+    "color": "Cream White/Collegiate Green",
+    "price": 109.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum.jpeg",
+    "gallery": [
+     "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum-front.jpeg",
+     "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum-back.jpeg",
+     "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum-sole.jpeg",
+     "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum-show1.jpeg",
+     "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum-show2.jpeg",
+     "/assets/adidas/gazelle/indoor-cream/adidas-gazelle-indoor-cream-white-collegiate-green-gum-show3.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Gazelle Indoor in Cream White is een tijdloze klassieker met een fris bovenwerk en groene strepen, perfect voor dagelijks gebruik.",
+    "category": "sneakers",
+    "tags": ["indoor", "klassiek", "unisex", "wit", "adidas"],
+    "featured": false,
+    "hidden": false
+  }
+]

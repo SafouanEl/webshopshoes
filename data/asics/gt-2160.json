@@ -1,0 +1,65 @@
+[
+  {
+    "id": "gt-2160-black-pure-silver",
+    "name": "Asics GT-2160 black pure silver",
+    "brand": "Asics",
+    "model": "GT-2160",
+    "color": "Black/Pure Silver",
+    "price": 129.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gt-2160/black-pure-silver/asics-gt-2160-black-pure-silver.jpeg",
+    "gallery": [
+      "/assets/asics/gt-2160/black-pure-silver/asics-gt-2160-black-pure-silver-front.jpeg",
+      "/assets/asics/gt-2160/black-pure-silver/asics-gt-2160-black-pure-silver-back.jpeg",
+      "/assets/asics/gt-2160/black-pure-silver/asics-gt-2160-black-pure-silver-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Asics GT-2160 in Black/Pure Silver biedt retro stijl gecombineerd met moderne hardlooptechnologie.",
+    "category": "sneakers",
+    "tags": ["asics", "gt2160", "black", "running", "retro"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gt-2160-pure-silver-white",
+    "name": "Asics GT-2160 pure silver white",
+    "brand": "Asics",
+    "model": "GT-2160",
+    "color": "Pure Silver/White",
+    "price": 129.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gt-2160/pure-silver-white/asics-gt-2160-pure-silver-white.jpeg",
+    "gallery": [
+      "/assets/asics/gt-2160/pure-silver-white/asics-gt-2160-pure-silver-white-front.jpeg",
+      "/assets/asics/gt-2160/pure-silver-white/asics-gt-2160-pure-silver-white-back.jpeg",
+      "/assets/asics/gt-2160/pure-silver-white/asics-gt-2160-pure-silver-white-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Pure Silver/White colorway van de GT-2160 straalt frisheid en performance uit.",
+    "category": "sneakers",
+    "tags": ["asics", "gt2160", "silver", "white", "retro"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gt-2160-white-pure-silver",
+    "name": "Asics GT-2160 white pure silver",
+    "brand": "Asics",
+    "model": "GT-2160",
+    "color": "White/Pure Silver",
+    "price": 129.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gt-2160/white-pure-silver/asics-gt-2160-white-pure-silver.jpeg",
+    "gallery": [
+      "/assets/asics/gt-2160/white-pure-silver/asics-gt-2160-white-pure-silver-front.jpeg",
+      "/assets/asics/gt-2160/white-pure-silver/asics-gt-2160-white-pure-silver-back.jpeg",
+      "/assets/asics/gt-2160/white-pure-silver/asics-gt-2160-white-pure-silver-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Witte mesh met zilveren details, perfect voor dagelijks gebruik en sportieve stijl.",
+    "category": "sneakers",
+    "tags": ["asics", "gt2160", "white", "silver", "lifestyle"],
+    "featured": false,
+    "hidden": false
+  }
+]

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= product.name %> | Shoe Plug</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="promo-bar">
+    <div class="promo-track" id="promo-track">
+      <span class="promo-item"><i data-lucide="truck"></i>Gratis verzending NL & BE</span>
+      <span class="promo-item"><i data-lucide="check-circle"></i>100% Kwaliteit gegarandeerd</span>
+      <span class="promo-item"><i data-lucide="clock"></i>14 dagen bedenktijd</span>
+      <span class="promo-item"><i data-lucide="shopping-cart"></i>Shop nu en ontdek onze kortingdeals!</span>
+      <span class="promo-item"><i data-lucide="sparkles"></i>Nieuwe collecties binnen!</span>
+    </div>
+  </div>
+
+  <%- include("partials/header") %>
+
+  <main class="product-detail-page">
+    <div class="product-detail-wrapper">
+
+    
+    <div class="product-images">
+
+
+
+      <div class="main-image-slider" id="mainImageSlider">
+      <img id="mainProductImage" src="<%= product.image %>" alt="<%= product.name %>" class="slide-img active" />
+      <% if (product.gallery && product.gallery.length) { %>
+        <% product.gallery.forEach(img => { %>
+          <img src="<%= img %>" alt="Product image" class="slide-img" />
+        <% }) %>
+      <% } %>
+    </div>
+
+
+
+      <% if (product.gallery && product.gallery.length) { %>
+<div class="thumbnail-list">
+  <img src="<%= product.image %>" alt="Thumbnail" class="thumbnail-img" />
+  <% if (product.gallery && product.gallery.length) { %>
+    <% product.gallery.forEach(img => { %>
+      <img src="<%= img %>" alt="Thumbnail" class="thumbnail-img" />
+    <% }) %>
+  <% } %>
+</div>
+
+<% } %>
+
+    </div>
+
+    <div class="product-info">
+      <h1><%= product.name %></h1>
+      <p><strong>Merk:</strong> <%= product.brand %></p>
+      <p><strong>Model:</strong> <%= product.model %></p>
+      <div class="discount-banner">
+        <!-- <span class="label">Actie</span> -->
+        🎁 <strong>Eerste 100 klanten</strong> krijgen <strong>15% korting</strong>!  
+        <!-- <a href="#" class="info-link">Meer info</a> -->
+      </div>
+
+      <% if (variants && variants.length > 0) { %>
+        <div class="product-variants">
+          <% variants.forEach(variant => { %>
+            <a href="/product/<%= variant.id %>" class="variant-thumb">
+              <img src="<%= variant.image %>" alt="<%= variant.name %>">
+            </a>
+          <% }) %>
+        </div>
+      <% } %>
+
+      <button
+  class="add-to-cart"
+  data-id="<%= product.id %>"
+  data-name="<%= product.model %>"
+  data-image="<%= product.image %>"
+>
+  Voeg toe aan winkelwagen
+</button>
+
+      <div class="info-dropdowns">
+            <details class="dropdown">
+                <summary>
+                Authenticitieit Garantie
+                <i data-lucide="chevron-down" class="chevron-icon"></i>
+                </summary>
+                <div class="content">
+                <p>De schoenen zijn <strong>100% authentiek en ongedragen</strong>;</p><br>
+                <p>De schoenen worden geleverd in de <strong>originele doos</strong> inclusief alle toebehoren;</p><br>
+                <p>Alle schoenen zijn streng gecontroleerd op echtheid en kwaliteit. Voordat we de schoenen versturen worden ze grondig geïnspecteerd.</p><br>
+                <!-- <p>Voor meer informatie klik <a href="#">hier</a></p> -->
+                </div>
+            </details>
+
+            <details class="dropdown">
+                <summary>
+                Beschrijving
+                <i data-lucide="chevron-down" class="chevron-icon"></i>
+                </summary>
+                <div class="content">
+                <p><%= product.description %></p>
+                </div>
+            </details>
+
+             <details class="dropdown">
+              <summary>
+                Bestelmethode
+                <i data-lucide="chevron-down" class="chevron-icon"></i>
+              </summary>
+              <div class="content">
+                <p>Zo plaats je een bestelling bij <strong>Shoe-plug</strong>:</p><br>
+                <ol class="indented-list">
+                  <li>Bekijk het aanbod via onze website (link in bio op onze socials).</li>
+                  <li>Maak een screenshot van het product dat je wilt.</li>
+                  <li>Vermeld je maat bij het product.</li>
+                  <li>Stuur ons een bericht via één van de volgende platformen:</li>
+                </ol>
+
+                <div class="social-icons">
+                  <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="#" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+                  <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+
+                <p>Wij reageren snel met prijs, beschikbaarheid en alle verdere info. Bestellen verloopt altijd 1-op-1, zonder winkelmand of betaalpagina.</p>
+              </div>
+            </details>
+        </div>
+
+    </div>
+    </div>
+    <section class="usp-section">
+  <div class="usp-container">
+    <div class="usp-item">
+      <div class="usp-icon"><i data-lucide="package"></i></div>
+      <div class="usp-text">
+        <strong>Onze verzending</strong>
+        <p>Levering in 5–10 werkdagen. Express verzending voor varianten met groene stip.</p>
+      </div>
+    </div>
+
+    <div class="usp-item">
+      <div class="usp-icon"><i data-lucide="rotate-ccw"></i></div>
+      <div class="usp-text">
+        <strong>14-dagen retourbeleid</strong>
+        <p>Retourneren binnen 14 dagen voor een volledige terugbetaling.</p>
+      </div>
+    </div>
+
+    <div class="usp-item">
+      <div class="usp-icon"><i data-lucide="user-round"></i></div>
+      <div class="usp-text">
+        <strong>Persoonlijke service</strong>
+        <p>Doorgaans, antwoord op uw vragen binnen 24 uur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="related-products">
+  <h2>Meer van <%= product.brand %></h2>
+  <div class="related-grid">
+    <% related.forEach(p => { %>
+      <a href="/product/<%= p.id %>" class="carousel-item">
+        <img src="<%= p.image %>" alt="<%= p.name %>">
+        <p class="product-name"><%= p.name %></p>
+        
+      </a>
+    <% }) %>
+  </div>
+</section>
+
+ <section class="trustpilot-widget">
+      <div class="trustpilot-header">
+        <img src="/assets/banners/trustpilot-logo.png" alt="Trustpilot logo" class="tp-logo" />
+        
+        <span class="rating-text">Rated <strong>4.9/5</strong> – gebaseerd op <strong>240+</strong> reviews</span>
+      </div>
+
+      <div class="trustpilot-content">
+        <h2>Shoe-Plug – Exclusieve sneakers. Persoonlijke service.</h2>
+        <p>Bij Shoe-Plug draait alles om passie, stijl en service. Met meer dan 1.000 tevreden klanten staan we bekend om onze betrouwbaarheid.</p>
+        <p>Bestel eenvoudig en snel via onze directe servicekanalen.</p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <%- include("partials/footer") %>
+
+  
+  <script>lucide.createIcons();</script>
+ <div class="image-overlay hidden" id="zoomModal">
+  <button class="prev" id="prevOverlay">&#10094;</button> <!-- ← -->
+  <img id="zoomedImage" src="" alt="Vergrote afbeelding">
+  <button class="next" id="nextOverlay">&#10095;</button> <!-- → -->
+  <button class="close-overlay" id="closeZoom">&times;</button>
+</div>
+
+</body>
+
+</html>

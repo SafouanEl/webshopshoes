@@ -1,0 +1,86 @@
+[
+  {
+    "id": "gel-nyc-black-fjord-grey",
+    "name": "Asics GEL-NYC",
+    "brand": "Asics",
+    "model": "GEL-NYC",
+    "color": "Black/Fjord/Grey",
+    "price": 139.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gel-nyc/black-fjord-grey/asics-gel-NYC-black-fjord-grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-nyc/black-fjord-grey/asics-gel-NYC-black-fjord-grey-front.jpeg",
+      "/assets/asics/gel-nyc/black-fjord-grey/asics-gel-NYC-black-fjord-grey-back.jpeg",
+      "/assets/asics/gel-nyc/black-fjord-grey/asics-gel-NYC-black-fjord-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Asics GEL-NYC in Black/Fjord/Grey combineert retro hardloopstijl met moderne performance-elementen.",
+    "category": "sneakers",
+    "tags": ["asics", "gel", "retro", "running", "streetwear"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "gel-nyc-cream-arctic-sky",
+    "name": "Asics GEL-NYC",
+    "brand": "Asics",
+    "model": "GEL-NYC",
+    "color": "Cream/Arctic/Sky",
+    "price": 139.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gel-nyc/Cream Arctic Sky/asics-gel-NYC-Cream-Arctic-Sky.jpeg",
+    "gallery": [
+      "/assets/asics/gel-nyc/Cream Arctic Sky/asics-gel-NYC-Cream-Arctic-Sky-front.jpeg",
+      "/assets/asics/gel-nyc/Cream Arctic Sky/asics-gel-NYC-Cream-Arctic-Sky-back.jpeg",
+      "/assets/asics/gel-nyc/Cream Arctic Sky/asics-gel-NYC-Cream-Arctic-Sky-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Asics GEL-NYC in Cream/Arctic/Sky combineert retro hardloopstijl met moderne performance-elementen.",
+    "category": "sneakers",
+    "tags": ["asics", "gel", "retro", "running", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-nyc-graphite-grey-black",
+    "name": "Asics GEL-NYC",
+    "brand": "Asics",
+    "model": "GEL-NYC",
+    "color": "Graphite/Grey/Black",
+    "price": 139.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gel-nyc/graphite-grey-black/ASICS-Gel-NYC-Graphite-Gray-Black.jpeg",
+    "gallery": [
+      "/assets/asics/gel-nyc/graphite-grey-black/ASICS-Gel-NYC-Graphite-Gray-Black-front.jpeg",
+      "/assets/asics/gel-nyc/graphite-grey-black/ASICS-Gel-NYC-Graphite-Gray-Black-back.jpeg",
+      "/assets/asics/gel-nyc/graphite-grey-black/ASICS-Gel-NYC-Graphite-Gray-Black-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Asics GEL-NYC in Graphite/Grey/Black combineert retro hardloopstijl met moderne performance-elementen.",
+    "category": "sneakers",
+    "tags": ["asics", "gel", "retro", "running", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-nyc-oyster-grey",
+    "name": "Asics GEL-NYC",
+    "brand": "Asics",
+    "model": "GEL-NYC",
+    "color": "Oyster/Grey",
+    "price": 139.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/asics/gel-nyc/oyster-grey/ASICS-Gel-NYC-Oyster-Grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-nyc/oyster-grey/ASICS-Gel-NYC-Oyster-Grey-front.jpeg",
+      "/assets/asics/gel-nyc/oyster-grey/ASICS-Gel-NYC-Oyster-Grey-back.jpeg",
+      "/assets/asics/gel-nyc/oyster-grey/ASICS-Gel-NYC-Oyster-Grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Asics GEL-NYC in Oyster/Grey combineert retro hardloopstijl met moderne performance-elementen.",
+    "category": "sneakers",
+    "tags": ["asics", "gel", "retro", "running", "streetwear"],
+    "featured": false,
+    "hidden": false
+  }
+]

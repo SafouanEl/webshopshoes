@@ -1,0 +1,90 @@
+<header>
+  <nav class="nav-class">
+
+    <!-- 📱 HAMBURGER BUTTON (alleen mobiel) -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Menu openen">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- 🔗 LOGO -->
+    <div id="Logo">
+      <a href="/">Shoe - Plug</a>
+    </div>
+
+    <!-- 🖥️ DESKTOP NAV -->
+    <ul class="mid-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/shop?gender=heren">Men</a></li>
+      <li><a href="/shop?gender=vrouw">Woman</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <!-- 🔍 & 🛒 RECHTS -->
+    <div class="right-nav">
+
+      <!-- Zoekveld desktop -->
+      <div class="search-wrapper">
+        <form id="desktop-search-form" class="search-form" action="/search" method="GET">
+          <input type="text" name="q" placeholder="Zoeken naar schoenen..." />
+          <button type="submit"><i data-lucide="search"></i></button>
+        </form>
+        <div class="search-suggestions hidden" id="search-suggestions"></div>
+      </div>
+
+      <!-- Zoekknop mobiel -->
+      <button id="search-toggle" class="mobile-search-toggle" aria-label="Zoeken openen">
+        <i data-lucide="search"></i>
+      </button>
+
+      <!-- 🛒 Winkelmand (knop i.p.v. <a>) -->
+      <a class="cart-icon" id="cartToggleBtn" title="Winkelmand">
+        <i data-lucide="shopping-bag"></i>
+        <span id="cart-count" class="cart-count hidden">0</span>
+      </a>
+
+      <!-- 👤 Profiel -->
+      <!-- <a href="/profile" class="profile-icon">
+        <i data-lucide="user"></i>
+      </a> -->
+    </div>
+  </nav>
+
+  <!-- 🔍 Mobiele zoekbalk -->
+  <div class="mobile-search-bar" id="mobile-search-bar">
+    <div class="mobile-search-wrapper">
+      <form id="mobile-search-form" action="/search" method="GET">
+        <input type="text" name="q" placeholder="Zoeken..." />
+        <button type="submit"><i data-lucide="search"></i></button>
+      </form>
+      <div class="search-suggestions hidden" id="mobile-search-suggestions"></div>
+    </div>
+  </div>
+
+  <!-- 📱 Mobiele navigatie -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="close-mobile-nav" id="close-nav" aria-label="Menu sluiten">
+      <i data-lucide="x"></i>
+    </button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/shop?gender=heren">Men</a></li>
+      <li><a href="/shop?gender=vrouw">Woman</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <!-- <li><a href="/profile">Account</a></li> -->
+    </ul>
+  </div>
+
+  <!-- 🛒 WINKELMAND SIDEBAR -->
+  <div id="cartOverlay" class="cart-overlay hidden"></div>
+
+  <aside id="cartSidebar" class="cart-sidebar">
+    <button id="cartCloseBtn" class="close-button">×</button>
+    <h2>Winkelmand</h2>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total">Totaal: <span id="cartTotal">€0.00</span></div>
+    <a href="#" class="checkout-btn" id="checkoutBtn">Afrekenen</a>
+
+  </aside>
+</header>

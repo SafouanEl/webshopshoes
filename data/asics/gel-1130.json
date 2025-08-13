@@ -1,0 +1,170 @@
+[
+  {
+    "id": "gel-1130-black-white",
+    "name": "ASICS GEL-1130 Black White",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "Black/White",
+    "price": 99.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/asics/gel-1130/black-glacier-grey/asics-gel-1130-exclusive-black-white.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/black-glacier-grey/asics-gel-1130-exclusive-black-white-front.jpeg",
+      "/assets/asics/gel-1130/black-glacier-grey/asics-gel-1130-exclusive-black-white-back.jpeg",
+      "/assets/asics/gel-1130/black-glacier-grey/asics-gel-1130-exclusive-black-white-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De ASICS GEL-1130 in Black White is een sportieve, ademende en stevige sneaker, ideaal voor dagelijks gebruik of streetwear.",
+    "category": "sneakers",
+    "tags": ["zwart", "wit", "mesh", "running", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-black-pure-silver",
+    "name": "ASICS GEL-1130 Black Pure Silver",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "Black/Pure Silver",
+    "price": 99.99,
+    "sizes": [38, 39, 40, 41, 42, 43],
+    "image": "/assets/asics/gel-1130/black-pure-silver/asics-gel-1130-black-pure-silver.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/black-pure-silver/asics-gel-1130-black-pure-silver-front.jpeg",
+      "/assets/asics/gel-1130/black-pure-silver/asics-gel-1130-black-pure-silver-back.jpeg",
+      "/assets/asics/gel-1130/black-pure-silver/asics-gel-1130-black-pure-silver-sole.jpeg"
+    ],
+    "gender": ["heren"],
+    "description": "Minimalistisch en stijlvol met glanzende zilveren accenten – deze GEL-1130 is perfect voor sport en fashion.",
+    "category": "sneakers",
+    "tags": ["zwart", "silver", "tech", "asics", "running"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-cream-clay-grey",
+    "name": "ASICS GEL-1130 Cream Clay Grey",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "Cream/Clay Grey",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/asics/gel-1130/cream-clay-grey/asics-gel-1130-cream-clay-grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/cream-clay-grey/asics-gel-1130-cream-clay-grey-front.jpeg",
+      "/assets/asics/gel-1130/cream-clay-grey/asics-gel-1130-cream-clay-grey-back.jpeg",
+      "/assets/asics/gel-1130/cream-clay-grey/asics-gel-1130-cream-clay-grey-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "Een warme en neutrale colorway met comfortabele pasvorm – een veelzijdige keuze in de GEL-1130 lijn.",
+    "category": "sneakers",
+    "tags": ["beige", "cream", "techwear", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-shark-skin",
+    "name": "ASICS GEL-1130 Shark Skin",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "White/Grey/Blue",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/asics/gel-1130/shark-skin/asics-gel-1130-shark-skin.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/shark-skin/asics-gel-1130-shark-skin-front.jpeg",
+      "/assets/asics/gel-1130/shark-skin/asics-gel-1130-shark-skin-back.jpeg",
+      "/assets/asics/gel-1130/shark-skin/asics-gel-1130-shark-skin-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De Shark Skin GEL-1130 mixt sportieve tech-look met stijlvolle lichtblauwe accenten.",
+    "category": "sneakers",
+    "tags": ["wit", "grijs", "lichtblauw", "tech", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-white-aqua",
+    "name": "ASICS GEL-1130 GS White Aqua (Kids)",
+    "brand": "ASICS",
+    "model": "GEL-1130 GS",
+    "color": "White/Aqua",
+    "price": 79.99,
+    "sizes": [35, 36, 37, 38, 39],
+    "image": "/assets/asics/gel-1130/white-aqua/asics-kids-gel-1130-gs-white-aqua.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/white-aqua/asics-kids-gel-1130-gs-white-aqua-front.jpeg",
+      "/assets/asics/gel-1130/white-aqua/asics-kids-gel-1130-gs-white-aqua-back.jpeg",
+      "/assets/asics/gel-1130/white-aqua/asics-kids-gel-1130-gs-white-aqua-sole.jpeg"
+    ],
+    "gender": ["heren","dames"],
+    "description": "Voor de jonge sneakerfans: lichtgewicht, kleurrijk en comfortabel – de GEL-1130 GS in Aqua.",
+    "category": "sneakers",
+    "tags": ["wit", "aqua", "asics", "jongeren"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-white-carrier-grey",
+    "name": "ASICS GEL-1130 White Carrier Grey",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "White/Carrier Grey",
+    "price": 99.99,
+    "sizes": [37, 38, 39, 40, 41, 42],
+    "image": "/assets/asics/gel-1130/White-Carrier-Gray-Lilac/asics-gel-1130-wmns-white-carrier-grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/White-Carrier-Gray-Lilac/asics-gel-1130-wmns-white-carrier-grey-back.jpeg",
+      "/assets/asics/gel-1130/White-Carrier-Gray-Lilac/asics-gel-1130-wmns-white-carrier-grey-front.jpeg",
+      "/assets/asics/gel-1130/White-Carrier-Gray-Lilac/asics-gel-1130-wmns-white-carrier-grey-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "Een lichte basis met subtiele grijze details – strak en geschikt voor elke gelegenheid.",
+    "category": "sneakers",
+    "tags": ["wit", "neutraal", "dames", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-white-cloud-grey",
+    "name": "ASICS GEL-1130 White Cloud Grey",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "White/Cloud Grey",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/asics/gel-1130/white-cloud-gray/asics-gel-1130-white-cloud-grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/white-cloud-gray/asics-gel-1130-white-cloud-grey-front.jpeg",
+      "/assets/asics/gel-1130/white-cloud-gray/asics-gel-1130-white-cloud-grey-back.jpeg",
+      "/assets/asics/gel-1130/white-cloud-gray/asics-gel-1130-white-cloud-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Cloud Grey uitvoering is luchtig, modern en veelzijdig voor elke outfit of workout.",
+    "category": "sneakers",
+    "tags": ["wit", "lichtgrijs", "tech", "asics", "unisex"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-1130-white-neutral-pink",
+    "name": "ASICS GEL-1130 White Neutral Pink",
+    "brand": "ASICS",
+    "model": "GEL-1130",
+    "color": "White/Neutral Pink",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/asics/gel-1130/white-neutral-pink/asics-gel-1130-wmns-white-neutral-pink.jpeg",
+    "gallery": [
+      "/assets/asics/gel-1130/white-neutral-pink/asics-gel-1130-wmns-white-neutral-pink-front.jpeg",
+      "/assets/asics/gel-1130/white-neutral-pink/asics-gel-1130-wmns-white-neutral-pink-back.jpeg",
+      "/assets/asics/gel-1130/white-neutral-pink/asics-gel-1130-wmns-white-neutral-pink-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "Deze GEL-1130 in wit en roze straalt balans en vrouwelijkheid uit met tech-geïnspireerd design.",
+    "category": "sneakers",
+    "tags": ["roze", "wit", "techwear", "asics", "vrouwelijk"],
+    "featured": false,
+    "hidden": false
+  }
+]

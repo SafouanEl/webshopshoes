@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ugg-tasman-slipper-black",
+    "name": "UGG Tasman Slipper",
+    "brand": "UGG",
+    "model": "Tasman",
+    "color": "Black",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/ugg/tasman/black/ugg-tasman-slipper-black.jpeg",
+    "gallery": [
+      "/assets/ugg/tasman/black/ugg-tasman-slipper-black-front.jpeg",
+      "/assets/ugg/tasman/black/ugg-tasman-slipper-black-back.jpeg",
+      "/assets/ugg/tasman/black/ugg-tasman-slipper-black-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De UGG Tasman slipper in het zwart is een comfortabele instapper met een premium suède bovenwerk en kenmerkend stiksel.",
+    "category": "slippers",
+    "tags": ["ugg", "tasman", "slipper", "instapper", "winter"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "ugg-tasman-slipper-chestnut",
+    "name": "UGG Tasman Slipper",
+    "brand": "UGG",
+    "model": "Tasman",
+    "color": "Chestnut",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/ugg/tasman/chestnut/ugg-tasman-chesnut.jpg",
+    "gallery": [
+      "/assets/ugg/tasman/chestnut/ugg-tasman-chesnut-front.jpg",
+      "/assets/ugg/tasman/chestnut/ugg-tasman-chesnut-back.jpg",
+      "/assets/ugg/tasman/chestnut/ugg-tasman-chesnut-sole.jpg"
+    ],
+    "gender": ["dames"],
+    "description": "Deze UGG Tasman slipper in de kleur Chestnut is perfect voor binnenshuis of casual buitengebruik.",
+    "category": "slippers",
+    "tags": ["ugg", "tasman", "chestnut", "slipper", "lifestyle"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "ugg-tasman-slipper-goat",
+    "name": "UGG Tasman Slipper",
+    "brand": "UGG",
+    "model": "Tasman",
+    "color": "Goat",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/ugg/tasman/goat/ugg-tasman-slipper-goat.jpeg",
+    "gallery": [
+      "/assets/ugg/tasman/goat/ugg-tasman-slipper-goat-front.jpeg",
+      "/assets/ugg/tasman/goat/ugg-tasman-slipper-goat-back.jpeg",
+      "/assets/ugg/tasman/goat/ugg-tasman-slipper-goat-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "Stijlvolle en comfortabele UGG Tasman in de kleur Goat, perfect voor elk seizoen.",
+    "category": "slippers",
+    "tags": ["ugg", "tasman", "goat", "instapper"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "ugg-tasman-slipper-goose",
+    "name": "UGG Tasman Slipper",
+    "brand": "UGG",
+    "model": "Tasman",
+    "color": "Goose",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40],
+    "image": "/assets/ugg/tasman/goose/ugg-tasman-slipper-goose.jpeg",
+    "gallery": [
+      "/assets/ugg/tasman/goose/ugg-tasman-slipper-goose-front.jpeg",
+      "/assets/ugg/tasman/goose/ugg-tasman-slipper-goose-back.jpeg",
+      "/assets/ugg/tasman/goose/ugg-tasman-slipper-goose-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "UGG Tasman slipper in Goose grey met zachte voering en iconische afwerking rondom de kraag.",
+    "category": "slippers",
+    "tags": ["ugg", "tasman", "grijs", "cosy", "trendy"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "ugg-tasman-slipper-mustard-seed",
+    "name": "UGG Tasman Slipper",
+    "brand": "UGG",
+    "model": "Tasman",
+    "color": "Mustard Seed",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40],
+    "image": "/assets/ugg/tasman/mustard-seed/ugg-tasman-slipper-mustard-seed.jpeg",
+    "gallery": [
+      "/assets/ugg/tasman/mustard-seed/ugg-tasman-slipper-mustard-seed-back.jpeg",
+      "/assets/ugg/tasman/mustard-seed/ugg-tasman-slipper-mustard-seed-front.jpeg",
+      "/assets/ugg/tasman/mustard-seed/ugg-tasman-slipper-mustard-seed-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De Mustard Seed uitvoering van de Tasman slipper combineert comfort en stijl in een warme, aardse tint.",
+    "category": "slippers",
+    "tags": ["ugg", "tasman", "mustard", "gezellig", "warm"],
+    "featured": false,
+    "hidden": false
+  }
+]

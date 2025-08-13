@@ -1,0 +1,151 @@
+[
+  {
+    "id": "gel-kayano-14-arctic-sky",
+    "name": "ASICS GEL-Kayano 14 Arctic Sky Pure Silver",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "Arctic Sky/Pure Silver",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/asics/gel-kyano14/artic-sku-pure-silver/asics-gel-kayano-14-arctic-sky-pure-silver.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/artic-sku-pure-silver/asics-gel-kayano-14-arctic-sky-pure-silver-front.jpeg",
+      "/assets/asics/gel-kyano14/artic-sku-pure-silver/asics-gel-kayano-14-arctic-sky-pure-silver-back.jpeg",
+      "/assets/asics/gel-kyano14/artic-sku-pure-silver/asics-gel-kayano-14-arctic-sky-pure-silver-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Arctic Sky uitvoering brengt een frisse ijsblauwe tint in combinatie met glanzend zilver – perfect voor liefhebbers van futuristische sneakers.",
+    "category": "sneakers",
+    "tags": ["blauw", "zilver", "techwear", "asics", "unisex"],
+    "featured": false,
+    "hidden": false,
+     "popular": true
+  },
+  {
+    "id": "gel-kayano-14-black-pure-silver",
+    "name": "ASICS GEL-Kayano 14 Black Pure Silver",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "Black/Pure Silver",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/asics/gel-kyano14/black-pure-silver/asics-gel-kayano-14-black-pure-silver.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/black-pure-silver/asics-gel-kayano-14-black-pure-silver-front.jpeg",
+      "/assets/asics/gel-kyano14/black-pure-silver/asics-gel-kayano-14-black-pure-silver-back.jpeg",
+      "/assets/asics/gel-kyano14/black-pure-silver/asics-gel-kayano-14-black-pure-silver-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Een donkere, krachtige uitvoering van de GEL-Kayano 14. Volledig zwart met zilveren details, ideaal voor een strakke tech look.",
+    "category": "sneakers",
+    "tags": ["zwart", "zilver", "tech", "asics", "unisex"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-kayano-14-metallic-plum",
+    "name": "ASICS GEL-Kayano 14 Metallic Plum",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "Metallic Plum/Cream",
+    "price": 159.99,
+    "sizes": [37, 38, 39, 40, 41],
+    "image": "/assets/asics/gel-kyano14/cream-black-metallic-plum/asics-gel-kayano-14-metallic-plum.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/cream-black-metallic-plum/asics-gel-kayano-14-metallic-plum-front.jpeg",
+      "/assets/asics/gel-kyano14/cream-black-metallic-plum/asics-gel-kayano-14-metallic-plum-back.jpeg",
+      "/assets/asics/gel-kyano14/cream-black-metallic-plum/asics-gel-kayano-14-metallic-plum-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "Stijlvolle metallic details en zachte tinten maken deze GEL-Kayano 14 tot een unieke mix van performance en fashion.",
+    "category": "sneakers",
+    "tags": ["plum", "metaal", "vrouwelijk", "asics"],
+    "featured": false,
+    "hidden": false,
+     "popular": true
+  },
+  {
+    "id": "gel-kayano-14-jasper-green",
+    "name": "ASICS GEL-Kayano 14 Jasper Green",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "Silver/Grey/Green",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42],
+    "image": "/assets/asics/gel-kyano14/metropolis-jasper-green/asics-gel-kayano-14-jasper-green.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/metropolis-jasper-green/asics-gel-kayano-14-jasper-green-front.jpeg",
+      "/assets/asics/gel-kyano14/metropolis-jasper-green/asics-gel-kayano-14-jasper-green-back.jpeg",
+      "/assets/asics/gel-kyano14/metropolis-jasper-green/asics-gel-kayano-14-jasper-green-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Groene accenten en klassieke zilver-grijze mesh maken deze Jasper Green editie sportief en urban tegelijk.",
+    "category": "sneakers",
+    "tags": ["groen", "zilver", "retro-runner", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-kayano-14-white-fjord-grey",
+    "name": "ASICS GEL-Kayano 14 White Fjord Grey",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "White/Fjord Grey",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42],
+    "image": "/assets/asics/gel-kyano14/white-fjord-gray/asics-gel-kayano-14-white-fjord-grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/white-fjord-gray/asics-gel-kayano-14-white-fjord-grey-front.jpeg",
+      "/assets/asics/gel-kyano14/white-fjord-gray/asics-gel-kayano-14-white-fjord-grey-back.jpeg",
+      "/assets/asics/gel-kyano14/white-fjord-gray/asics-gel-kayano-14-white-fjord-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De witte basis met koele grijze en blauwe accenten maakt deze GEL-Kayano 14 fris en modern.",
+    "category": "sneakers",
+    "tags": ["wit", "grijs", "lichtblauw", "tech", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-kayano-14-white-midnight",
+    "name": "ASICS GEL-Kayano 14 WMNS White Midnight",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "White/Midnight/Cream",
+    "price": 159.99,
+    "sizes": [37, 38, 39, 40, 41],
+    "image": "/assets/asics/gel-kyano14/white-midnight/asics-gel-kayano-14-wmns-white-midnight.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/white-midnight/asics-gel-kayano-14-wmns-white-midnight-front.jpeg",
+      "/assets/asics/gel-kyano14/white-midnight/asics-gel-kayano-14-wmns-white-midnight-back.jpeg",
+      "/assets/asics/gel-kyano14/white-midnight/asics-gel-kayano-14-wmns-white-midnight-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De White Midnight uitvoering biedt een gebalanceerd kleurenschema met klassieke stijl – speciaal voor dames.",
+    "category": "sneakers",
+    "tags": ["wit", "midnight", "dames", "asics"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "gel-kayano-14-smoke-grey",
+    "name": "ASICS GEL-Kayano 14 Smoke Grey",
+    "brand": "ASICS",
+    "model": "GEL-Kayano 14",
+    "color": "Smoke Grey/Chalk",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42],
+    "image": "/assets/asics/gel-kyano14/white-smoke-gray/asics-gel-kayano-14-smoke-grey.jpeg",
+    "gallery": [
+      "/assets/asics/gel-kyano14/white-smoke-gray/asics-gel-kayano-14-smoke-grey-front.jpeg",
+      "/assets/asics/gel-kyano14/white-smoke-gray/asics-gel-kayano-14-smoke-grey-back.jpeg",
+      "/assets/asics/gel-kyano14/white-smoke-gray/asics-gel-kayano-14-smoke-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Smoke Grey is minimalistisch en clean – perfect voor liefhebbers van neutrale tones met een moderne vibe.",
+    "category": "sneakers",
+    "tags": ["grijs", "tonal", "minimal", "asics"],
+    "featured": false,
+    "hidden": false
+  }
+]

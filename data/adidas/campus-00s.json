@@ -1,0 +1,86 @@
+[
+  {
+    "id": "campus-00s-grey-white",
+    "name": "Adidas Campus 00s grey white",
+    "brand": "Adidas",
+    "model": "Campus 00s",
+    "color": "Grey/White",
+    "price": 109.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/adidas/campus/grey-white-gum/adidas-campus-00s-grey-gum.jpeg",
+    "gallery": [
+      "/assets/adidas/campus/grey-white-gum/adidas-campus-00s-grey-gum-front.jpeg",
+      "/assets/adidas/campus/grey-white-gum/adidas-campus-00s-grey-gum-back.jpeg",
+      "/assets/adidas/campus/grey-white-gum/adidas-campus-00s-grey-gum-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Adidas Campus 00s is een throwback naar klassieke skatestijl met modern comfort. Deze versie in grijs met witte strepen is tijdloos en veelzijdig.",
+    "category": "sneakers",
+    "tags": ["skate", "retro", "unisex", "streetwear", "adidas"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "campus-00s-core-black",
+    "name": "Adidas Campus 00s Core Black",
+    "brand": "Adidas",
+    "model": "Campus 00s",
+    "color": "Core Black/White",
+    "price": 109.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/adidas/campus/core-black/adidas-originals-campus-00s-core-black.jpeg",
+    "gallery": [
+      "/assets/adidas/campus/core-black/adidas-originals-campus-00s-core-black-front.jpeg",
+      "/assets/adidas/campus/core-black/adidas-originals-campus-00s-core-black-back.jpeg",
+      "/assets/adidas/campus/core-black/adidas-originals-campus-00s-core-black-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Campus 00s in Core Black is een stoere uitvoering van een klassieker. Met wit suède accenten en een rubberen zool is dit een echte streetwear essential.",
+    "category": "sneakers",
+    "tags": ["skate", "retro", "zwart", "adidas", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "campus-00s-crystal-white",
+    "name": "Adidas Campus 00s Crystal White",
+    "brand": "Adidas",
+    "model": "Campus 00s",
+    "color": "Crystal White/Core Black",
+    "price": 109.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/adidas/campus/crystal-white/adidas-campus-00s-crystal-white-core-black.jpeg",
+    "gallery": [
+      "/assets/adidas/campus/crystal-white/adidas-campus-00s-crystal-white-core-black-front.jpeg",
+      "/assets/adidas/campus/crystal-white/adidas-campus-00s-crystal-white-core-black-back.jpeg",
+      "/assets/adidas/campus/crystal-white/adidas-campus-00s-crystal-white-core-black-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Campus 00s Crystal White combineert frisse kleuren met een klassieke uitstraling. De zwarte strepen maken het contrast compleet.",
+    "category": "sneakers",
+    "tags": ["wit", "klassiek", "adidas", "skate", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "campus-00s-wonder-white",
+    "name": "Adidas Campus 00s Wonder White",
+    "brand": "Adidas",
+    "model": "Campus 00s",
+    "color": "Wonder White/White",
+    "price": 109.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/adidas/campus/wonder-white/adidas-originals-campus-00s-wonder-white.jpeg",
+    "gallery": [
+     "/assets/adidas/campus/wonder-white/adidas-originals-campus-00s-wonder-white-front.jpeg",
+     "/assets/adidas/campus/wonder-white/adidas-originals-campus-00s-wonder-white-back.jpeg",
+     "/assets/adidas/campus/wonder-white/adidas-originals-campus-00s-wonder-white-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Campus 00s in Wonder White straalt subtiele elegantie uit met een zachte beige tint en witte details. Perfect voor een minimalistische look.",
+    "category": "sneakers",
+    "tags": ["beige", "minimalistisch", "adidas", "retro", "unisex"],
+    "featured": false,
+    "hidden": false
+  }
+]

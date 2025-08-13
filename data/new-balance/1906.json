@@ -1,0 +1,66 @@
+[
+  {
+    "id": "nb-1906r-black-grey",
+    "name": "New Balance 1906R black grey",
+    "brand": "New Balance",
+    "model": "1906R",
+    "color": "Black/Grey",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/1906R/R-black-grey/new-balance-1906r-black-grey.jpeg",
+    "gallery": [
+      "/assets/new-balance/1906R/R-black-grey/new-balance-1906r-black-grey-front.jpeg",
+      "/assets/new-balance/1906R/R-black-grey/new-balance-1906r-black-grey-back.jpeg",
+      "/assets/new-balance/1906R/R-black-grey/new-balance-1906r-black-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 1906R in Black/Grey biedt een moderne uitvoering van klassieke hardloopsilhouetten met extra demping en ondersteuning.",
+    "category": "sneakers",
+    "tags": ["new balance", "1906R", "performance", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "nb-1906r-silver-blue",
+    "name": "New Balance 1906R silver blue",
+    "brand": "New Balance",
+    "model": "1906R",
+    "color": "Silver/Blue",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/1906R/silver bleu/new-balance-1906r-silver-blue.jpeg",
+    "gallery": [
+      "/assets/new-balance/1906R/silver bleu/new-balance-1906r-silver-blue-front.jpeg",
+      "/assets/new-balance/1906R/silver bleu/new-balance-1906r-silver-blue-back.jpeg",
+      "/assets/new-balance/1906R/silver bleu/new-balance-1906r-silver-blue-sole.jpeg",
+      "/assets/new-balance/1906R/silver bleu/new-balance-1906r-silver-blue-show1.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 1906R Silver/Blue combineert mesh en metallic overlays voor een frisse, sportieve uitstraling.",
+    "category": "sneakers",
+    "tags": ["new balance", "1906R", "silver", "running", "lifestyle"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "nb-1906r-silver-metallic",
+    "name": "New Balance 1906R silver metallic",
+    "brand": "New Balance",
+    "model": "1906R",
+    "color": "Silver/Metallic",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/1906R/silver-metallic/new-balance-1906r-silver-metallic.jpeg",
+    "gallery": [
+      "/assets/new-balance/1906R/silver-metallic/new-balance-1906r-silver-metallic-front.jpeg",
+      "/assets/new-balance/1906R/silver-metallic/new-balance-1906r-silver-metallic-back.jpeg",
+      "/assets/new-balance/1906R/silver-metallic/new-balance-1906r-silver-metallic-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 1906R in Silver Metallic is een premium runner met een retro-look en geavanceerde dempingstechnologie.",
+    "category": "sneakers",
+    "tags": ["new balance", "1906R", "retro", "silver", "abzorb"],
+    "featured": false,
+    "hidden": false
+  }
+]

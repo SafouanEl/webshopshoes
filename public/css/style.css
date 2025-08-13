@@ -1,0 +1,2106 @@
+/* ========== RESET & BASISSTIJL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* ========== promo bar boven header ========== */
+
+
+.promo-bar {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #111;
+  color: white;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+  font-size: 1rem;
+
+   min-height: 2.5rem;
+}
+
+.promo-track {
+  display: inline-flex;
+  gap: 4rem;
+  will-change: transform;
+}
+
+.promo-item::after {
+  content: " •";
+  margin-left: 4rem;
+  color: #aaa;
+}
+
+
+.promo-item svg {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+
+
+/* ========== HEADER STRUCTUUR ========== */
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.nav-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+#Logo a {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #000;
+  text-decoration: none;
+}
+
+
+/* ========== NAVIGATIE LINKS (DESKTOP) ========== */
+.mid-nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.mid-nav li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 0.3125rem;
+}
+
+.mid-nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.mid-nav li a:hover::after,
+.mid-nav li a.active::after {
+  width: 100%;
+}
+
+
+/* ========== RECHTER ZIJDE HEADER ========== */
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.right-nav a {
+  color: #000;
+  font-size: 1.2rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.right-nav a:hover {
+  opacity: 0.7;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+
+.cart-icon,
+.profile-icon {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+/* ========== DESKTOP ZOEKVELD ========== */
+.search-form {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 9999px; /* max afgerond = pill shape */
+  overflow: hidden;
+  background-color: white;
+}
+
+.search-form input {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px 0 0 9999px;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.search-form button {
+  border: none;
+  background-color: #222;
+  color: white;
+  padding: 0 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 9999px 9999px 0;
+}
+
+.search-suggestions {
+  position: absolute;
+  background: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-suggestions a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.search-suggestions img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* of wat jij mooi vindt */
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-suggestions a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.search-suggestions a:hover {
+  background-color: #f7f7f7;
+}
+
+.search-suggestions img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.mobile-search-wrapper {
+  position: relative;
+}
+
+#mobile-search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 999;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-search-suggestions a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+#mobile-search-suggestions a:hover {
+  background-color: #f5f5f5;
+}
+
+#mobile-search-suggestions img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* ========== HAMBURGER & MOBIEL MENU ========== */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 2rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.close-mobile-nav {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+
+/* ========== MOBIELE ZOEKVELD (HIDDEN DEFAULT) ========== */
+.mobile-search-bar {
+  display: none;
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.mobile-search-bar.active {
+  display: block;
+}
+
+.mobile-search-bar form {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.mobile-search-bar input {
+  flex: 1;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 9999px 0 0 9999px;
+  outline: none;
+}
+
+.mobile-search-bar button {
+  border: none;
+  background-color: #222;
+  color: white;
+  padding: 0 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 9999px 9999px 0;
+}
+
+.mobile-search-toggle {
+  display: none; /* standaard: niet tonen */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  .mid-nav {
+    display: none;
+  }
+
+  .profile-icon {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+ .nav-class {
+    padding: 1rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  #Logo {
+    flex: 1;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .right-nav {
+    gap: 1rem;
+  }
+
+  .right-nav a {
+    font-size: 1.3rem;
+  }
+
+    .cart-icon,
+  .search-icon {
+    min-width: 24px;
+  }
+
+  .search-form {
+    display: none;
+  }
+
+  .mobile-search-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ========== shop-car ========== */
+
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: white;
+  box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+.cart-sidebar.show {
+  right: 0;
+}
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.cart-overlay.hidden,
+.cart-sidebar.hidden {
+  display: none;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#close-cart-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.cart-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+.checkout-btn {
+  background: black;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+.cart-sidebar {
+  z-index: 10000;
+}
+
+.cart-overlay {
+  z-index: 9999;
+}
+
+.cart-overlay.hidden,
+.cart-sidebar.hidden {
+  display: none;
+}
+
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.cart-count.hidden {
+  display: none;
+}
+
+
+/* ========== popup afrekenen ========== */
+
+/* ✅ Checkout popup */
+.checkout-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.checkout-popup.hidden {
+  display: none;
+}
+
+.popup-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: center;
+}
+
+.popup-box h3 {
+  margin-bottom: 1rem;
+}
+
+.popup-box p {
+  margin-bottom: 1.5rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+
+
+
+
+/* ========== HERO BANNER (HOME PAGE) ========== */
+.hero-banner {
+  position: relative;
+  min-height: 28.125rem; /* 450px → 28.125rem */
+  background-image: url('/assets/banners/webshop-banner.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* donkere overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 53.125rem; /* 850px → 53.125rem */
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 40.625rem; /* 650px → 40.625rem */
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.hero-btn {
+  flex: 1 1 50%;
+  max-width: 12rem;
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+
+.hero-btn:hover {
+  background: #000;
+}
+
+
+/* ========== featerd-products ========== */
+
+.featured-products {
+  padding: 3rem 1rem;
+  padding-bottom: 0;
+  background-color: white;
+  text-align: center;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem; /* 👈 extra ruimte aan einde */
+}
+
+
+.carousel-item {
+  flex: 0 0 19%; /* 👈 kleiner dan 20%, zodat er nét geen 6 op passen */
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.product-price {
+  color: #111;
+  font-size: 0.9rem;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 calc(33.33% - 1rem); /* 3 per rij */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 calc(50% - 1rem); /* 2 per rij */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 0 0 100%; /* 1 per rij → full width swipe */
+  }
+}
+
+/* ========== collection ========== */
+
+
+.collections-section {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.collections-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.collections-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.brand-box {
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(6rem, 10vw, 9rem); /* responsief */
+  width: clamp(8rem, 12vw, 12rem); /* responsief */
+}
+
+
+.brand-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-box img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+@media (max-width: 600px) {
+  .brand-box {
+    width: 100px;
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .collections-grid {
+    gap: 1rem;
+  }
+}
+
+/* ========== popular section ========== */
+
+.popular-products {
+  padding: 2rem 1rem;
+  max-width: 110rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popular-products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.popular-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.popular-item {
+  width: calc(25% - 2rem);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.popular-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.product-price {
+  color: #111;
+  font-size: 0.9rem;
+}
+
+/* 📱 Mobiel: 2 per rij */
+@media (max-width: 768px) {
+  .popular-item {
+    width: calc(50% - 1rem);
+  }
+
+   .product-name {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  .product-price {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+
+/* ========== truspilot section ========== */
+
+.trustpilot-widget {
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.trustpilot-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tp-logo {
+  height: 7rem;
+}
+
+.stars i {
+  color: #00b67a;
+  font-size: 1.2rem;
+}
+
+.rating-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.trustpilot-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.trustpilot-content p {
+  color: #444;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0.5rem auto;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .trustpilot-widget {
+    padding: 1.5rem 1rem;
+  }
+
+  .trustpilot-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .rating-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========== hoe werkt het section ========== */
+
+.how-it-works {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.how-it-works .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.step {
+  flex: 1 1 calc(50% - 1rem);
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.step span {
+  display: inline-block;
+  background: #000;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.small-text {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.small-text a {
+  color: #000;
+}
+
+
+@media (max-width: 768px) {
+  .step {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* ========== shop-men ========== */
+.shop-page h1 {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.shop-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 110rem;
+  margin: 2rem auto;
+  padding: 0 0.5rem; /* ⬅️ deze zorgt voor padding links en rechts */
+}
+
+.desktop-filter-menu {
+  width: 250px;
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  padding-left: 0.5rem; /* ⬅️ extra ruimte links van de dropdowns */
+}
+
+
+.filter-dropdown {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+.filter-dropdown summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.filter-dropdown summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevron-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Draai de pijl omhoog als details open is */
+.filter-dropdown[open] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.submodels {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+
+.product-list {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  
+}
+
+.product-tile img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.product-price {
+  color: #111;
+  font-size: 0.95rem;
+}
+
+.product-tile {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-tile:hover {
+  text-decoration: none;
+}
+
+.product-name,
+.product-price {
+  margin: 0.3rem 0;
+}
+
+.product-name:hover {
+  text-decoration: underline; /* optioneel voor hover-effect */
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination a.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  pointer-events: none;
+}
+
+/* 🔘 Filterknop standaard verborgen */
+.filter-button-wrapper {
+  display: none;
+}
+
+.desktop-filter-menu {
+  display: block;
+}
+
+/* 📱 Alleen tonen op mobiel */
+@media (max-width: 768px) {
+.filter-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-filter-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .desktop-filter-menu {
+    display: none;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 🏷 Titel kleiner */
+  .shop-page h1 {
+    font-size: 1.5rem;
+  }
+
+  /* 🟦 Filterknop kleiner */
+  .mobile-filter-toggle {
+    font-size: 0.95rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  /* 👟 Productnaam en prijs */
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  .product-price {
+    font-size: 0.85rem;
+  }
+
+  .product-tile img {
+  
+  min-width: 120px; /* pas aan naar gewenste grootte */
+  
+}
+}
+@media (max-width: 290px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 per rij als het echt smal wordt */
+  }
+
+  
+}
+
+
+/* 📱 Overlay donker achtergrond */
+.mobile-filter-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
+}
+
+.mobile-filter-content {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 3rem 0.5rem 2rem 1.5rem;
+  width: 90%;
+  max-width: 360px;
+  max-height: 90vh;
+  position: relative;
+  margin: 5vh auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100vw);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; /* ✅ verbergt scrollbalken buiten scrollcontainer */
+  display: flex;
+  flex-direction: column;
+}
+/* ✅ scroll alleen binnen dit deel */
+.mobile-filter-scroll {
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-gutter: stable;
+  flex: 1;
+}
+
+/* ✅ scrollbar styling */
+.mobile-filter-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mobile-filter-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.mobile-filter-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* header binnenin met sluitknop */
+.mobile-filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* wanneer actief */
+.mobile-filter-overlay.active .mobile-filter-content {
+  transform: translateX(0);
+}
+
+
+/* alleen op mobiel */
+@media (min-width: 769px) {
+  .mobile-filter-overlay {
+    display: none !important;
+  }
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.filter-group summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.filter-options {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.filter-options label {
+  font-size: 0.95rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+/* ========== footer ========== */
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-socials a {
+  color: #ccc;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+/* ===============================
+   📦 Layout: Product Detail Wrapper
+   =============================== */
+.product-detail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* ===============================
+   📸 Afbeeldingen & Thumbnails
+   =============================== */
+.product-images {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.main-image-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-img {
+  width: 100%;
+  display: none;
+  object-fit: contain;
+}
+
+.slide-img.active {
+  display: block;
+}
+
+.thumbnail-list {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.thumbnail-img:hover {
+  border-color: black;
+}
+
+/* Mobiele thumbnails swipe */
+@media (max-width: 768px) {
+  .thumbnail-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.5rem;
+  }
+
+  .thumbnail-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .thumbnail-img {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 auto;
+  }
+}
+
+
+
+/* ===============================
+      🎁 korting banner
+   =============================== */
+
+.discount-banner {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  /* max-width: 40rem; */
+}
+
+.discount-banner strong {
+  font-weight: 600;
+}
+
+.discount-banner .info-link {
+  font-size: 0.85rem;
+  color: #444;
+  text-decoration: underline;
+  margin-left: auto;
+}
+
+/* .label {
+  background: #ff7f7f;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+} */
+
+
+
+/* ===============================
+   🛍️ Product Info & Varianten
+   =============================== */
+.product-info {
+  flex: 1 1 50%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-price {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.add-to-cart {
+  padding: 0.8rem 1.5rem;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  /* max-width: 40rem; */
+}
+
+/* ===============================
+   🎨 Varianten Slider (Desktop & Mobiel)
+   =============================== */
+.product-variants {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.variant-thumb {
+  border: 2px solid #eee;
+  padding: 3px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: border 0.2s ease;
+}
+
+.variant-thumb img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.variant-thumb:hover {
+  border-color: black;
+}
+
+/* Mobiele swipe voor varianten */
+@media (max-width: 768px) {
+  .product-variants {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .product-variants::-webkit-scrollbar {
+    display: none;
+  }
+
+  .variant-thumb {
+    flex: 0 0 auto;
+  }
+}
+
+/* ===============================
+   🔽 Info Dropdowns
+   =============================== */
+.info-dropdowns {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.info-dropdowns details {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.info-dropdowns summary {
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.info-dropdowns summary::-webkit-details-marker {
+  display: none;
+}
+
+.info-dropdowns .chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.info-dropdowns details[open] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.info-dropdowns .content {
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.indented-list {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons i {
+  color: #333;
+}
+
+
+
+/* ===============================
+   🧑‍💼 USPs (Garantie, Service etc.)
+   =============================== */
+.usp-section {
+  background-color: #f8f8f8;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  border-radius: 12px;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.usp-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.usp-item {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 280px;
+  gap: 1rem;
+}
+
+.usp-icon {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usp-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.usp-text strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.usp-text p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ===============================
+   👟 Related Products (Carrousel)
+   =============================== */
+.related-products {
+  max-width: 110rem;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.related-products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.related-grid {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1.8rem;
+}
+
+.related-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.related-grid::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.related-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-item {
+  color: inherit;
+  text-decoration: none;
+  min-width: 365px;
+}
+
+.carousel-item .product-name,
+.carousel-item .product-price {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: left;
+}
+
+.carousel-item:hover .product-name {
+  text-decoration: underline;
+}
+
+/* ===============================
+   🖼️ Image Overlay (Vergroting)
+   =============================== */
+.image-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.image-overlay img {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.image-overlay button {
+  position: absolute;
+  font-size: 2.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.image-overlay .prev {
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-overlay .next {
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-overlay .close-overlay {
+  top: 1rem;
+  right: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#mainProductImage {
+  cursor: pointer;
+}
+
+/* ===============================
+   📱 Responsive fallback
+   =============================== */
+@media (max-width: 768px) {
+  .product-detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-images,
+  .product-info {
+    width: 100%;
+  }
+}
+
+/* ===============================
+   📱 Extra optimalisatie voor kleine schermen (max 480px)
+   =============================== */
+@media (max-width: 480px) {
+
+  .product-detail-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .product-images,
+  .product-info {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnail-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .thumbnail-img {
+    width: 55px;
+    height: 55px;
+    flex: 0 0 auto;
+  }
+
+  .product-info h1 {
+    font-size: 1.4rem;
+  }
+
+  .product-info p {
+    font-size: 0.95rem;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  .add-to-cart {
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: unset;
+    padding: 1rem;
+  }
+
+  .product-variants {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .variant-thumb img {
+    width: 55px;
+  }
+
+  .info-dropdowns summary {
+    font-size: 1rem;
+  }
+
+  .info-dropdowns .content {
+    font-size: 0.9rem;
+  }
+
+  .usp-section {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .usp-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .usp-item {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .usp-text p {
+    font-size: 0.85rem;
+  }
+
+  .related-products h2 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-item {
+    min-width: 70vw;
+  }
+
+  .carousel-item .product-name,
+  .carousel-item .product-price {
+    font-size: 0.9rem;
+  }
+
+  .image-overlay img {
+    max-width: 95%;
+    max-height: 70%;
+    padding: 1rem;
+  }
+
+  .image-overlay button {
+    font-size: 1.5rem;
+  }
+
+  .image-overlay .close-overlay {
+    font-size: 1.5rem;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .usp-item {
+    padding: 1rem;
+    gap: 0.75rem;
+    border-radius: 8px;
+  }
+
+  .usp-icon {
+    padding: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .usp-text strong {
+    font-size: 1rem;
+  }
+
+  .usp-text p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+} */
+
+
+/* ABOUT PAGE */
+.about-container {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.about-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.about-container h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: #222;
+}
+
+.about-container p {
+  margin-top: 0.8rem;
+  color: #555;
+}
+
+/* Optioneel: fade in effect bij laden */
+.about-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ========== CONTACT PAGE ========== */
+
+.contact-container {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.contact-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.contact-container h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-container p {
+  margin-top: 0.8rem;
+  color: #555;
+}
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #f9f9f9;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  flex: 1 1 280px;
+  transition: background-color 0.2s ease;
+}
+
+.contact-method:hover {
+  background-color: #eee;
+}
+
+.contact-method i {
+  font-size: 1.4rem;
+  color: #111;
+}
+
+/* Fade in effect dat matched met about-us */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.how-works-list, .contact-channels, .socials-promo {
+  padding-left: 4rem; /* Of 30px, of 3em, wat jij mooi vindt */
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: #333;
+}

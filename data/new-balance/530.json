@@ -1,0 +1,110 @@
+[
+  {
+    "id": "nb-530-classic-black-grey",
+    "name": "New Balance 530 black grey",
+    "brand": "New Balance",
+    "model": "530",
+    "color": "Classic Black/Grey",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/530/classic-black-grey/new-balance-530-classic-black-grey.jpeg",
+    "gallery": [
+      "/assets/new-balance/530/classic-black-grey/new-balance-530-classic-black-grey-front.jpeg",
+      "/assets/new-balance/530/classic-black-grey/new-balance-530-classic-black-grey-back.jpeg",
+      "/assets/new-balance/530/classic-black-grey/new-balance-530-classic-black-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 530 Classic Black/Grey combineert retro vibes met moderne demping dankzij de ABZORB-technologie.",
+    "category": "sneakers",
+    "tags": ["new balance", "530", "retro", "comfort", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "nb-530-raincloud",
+    "name": "New Balance 530 raincloud",
+    "brand": "New Balance",
+    "model": "530",
+    "color": "Raincloud",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/new-balance/530/raincloud/new-balance-530-raincloud.jpeg",
+    "gallery": [
+      "/assets/new-balance/530/raincloud/new-balance-530-raincloud-front.jpeg",
+      "/assets/new-balance/530/raincloud/new-balance-530-raincloud-back.jpeg",
+      "/assets/new-balance/530/raincloud/new-balance-530-raincloud-sole.jpeg",
+      "/assets/new-balance/530/raincloud/new-balance-530-raincloud-show1.jpeg",
+      "/assets/new-balance/530/raincloud/new-balance-530-raincloud-show1.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 530 Raincloud is een tijdloze grijze sneaker die stijl en comfort perfect in balans brengt.",
+    "category": "sneakers",
+    "tags": ["new balance", "530", "grijs", "casual", "lifestyle"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "nb-530-triple-black",
+    "name": "New Balance 530 triple black",
+    "brand": "New Balance",
+    "model": "530",
+    "color": "Triple Black",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
+    "image": "/assets/new-balance/530/triple-black/new-balance-530-triple-black.jpeg",
+    "gallery": [
+      "/assets/new-balance/530/triple-black/new-balance-530-triple-black-front.jpeg",
+      "/assets/new-balance/530/triple-black/new-balance-530-triple-black-back.jpeg",
+      "/assets/new-balance/530/triple-black/new-balance-530-triple-black-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Triple Black uitvoering van de New Balance 530 is strak, veelzijdig en ideaal voor een minimalistische look.",
+    "category": "sneakers",
+    "tags": ["new balance", "530", "zwart", "minimalistisch", "urban"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "nb-530-triple-white",
+    "name": "New Balance 530 triple white",
+    "brand": "New Balance",
+    "model": "530",
+    "color": "Triple White",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42],
+    "image": "/assets/new-balance/530/triple-white/new-balance-530-triple-white.jpeg",
+    "gallery": [
+      "/assets/new-balance/530/triple-white/new-balance-530-triple-white-front.jpeg",
+      "/assets/new-balance/530/triple-white/new-balance-530-triple-white-back.jpeg",
+      "/assets/new-balance/530/triple-white/new-balance-530-triple-white-sole.jpeg",
+      "/assets/new-balance/530/triple-white/new-balance-530-triple-white-show1.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 530 Triple White is een frisse all-white sneaker die bij elke outfit past.",
+    "category": "sneakers",
+    "tags": ["new balance", "530", "wit", "clean", "classic"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "nb-530-white-black-details",
+    "name": "New Balance 530 black details",
+    "brand": "New Balance",
+    "model": "530",
+    "color": "White/Black Details",
+    "price": 109.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
+    "image": "/assets/new-balance/530/white-black-details/new-balance-530-white-black-details.jpeg",
+    "gallery": [
+      "/assets/new-balance/530/white-black-details/new-balance-530-white-black-details-front.jpeg",
+      "/assets/new-balance/530/white-black-details/new-balance-530-white-black-details-back.jpeg",
+      "/assets/new-balance/530/white-black-details/new-balance-530-white-black-details-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De White/Black uitvoering van de New Balance 530 brengt contrast en comfort samen in een sportieve stijl.",
+    "category": "sneakers",
+    "tags": ["new balance", "530", "wit", "zwart", "running"],
+    "featured": false,
+    "hidden": false
+  }
+]

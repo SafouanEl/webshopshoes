@@ -1,0 +1,97 @@
+[
+  {
+    "id": "samba-og-cream-white",
+    "name": "Adidas Samba OG Cream White",
+    "brand": "Adidas",
+    "model": "Samba",
+    "color": "Cream White/Sand Strata",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
+    "image": "/assets/adidas/samba/cream-white/adidas-samba-og-cream-white-sand-strata.jpeg",
+    "gallery": [
+      "/assets/adidas/samba/cream-white/adidas-samba-og-cream-white-sand-strata-front.jpeg",
+      "/assets/adidas/samba/cream-white/adidas-samba-og-cream-white-sand-strata-back.jpeg",
+      "/assets/adidas/samba/cream-white/adidas-samba-og-cream-white-sand-strata-sole.jpeg",
+      "/assets/adidas/samba/cream-white/adidas-samba-og-cream-white-sand-strata-show1.jpeg",
+      "/assets/adidas/samba/cream-white/adidas-samba-og-cream-white-sand-strata-show2.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De klassieke Adidas Samba OG in Cream White met Sand Strata details is een subtiele maar stijlvolle keuze voor elke outfit.",
+    "category": "sneakers",
+    "tags": ["retro", "klassiek", "adidas", "unisex", "casual"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "sambae-leopard-off-white",
+    "name": "Adidas Sambae Leopard",
+    "brand": "Adidas",
+    "model": "Samba",
+    "color": "Off White/Leopard",
+    "price": 119.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/adidas/samba/leopard-off-white/adidas-sambae-leopard-off-white.jpeg",
+    "gallery": [
+      "/assets/adidas/samba/leopard-off-white/adidas-sambae-leopard-off-white-front.jpeg",
+      "/assets/adidas/samba/leopard-off-white/adidas-sambae-leopard-off-white-back.jpeg",
+      "/assets/adidas/samba/leopard-off-white/adidas-sambae-leopard-off-white-sole1.jpeg",
+      "/assets/adidas/samba/leopard-off-white/adidas-sambae-leopard-off-white-show1.jpeg",
+      "/assets/adidas/samba/leopard-off-white/adidas-sambae-leopard-off-white-show2.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De Adidas Sambae met leopard-details combineert speelse prints met een chunky zool en stijlvolle afwerking.",
+    "category": "sneakers",
+    "tags": ["leopard", "dames", "sambae", "statement", "adidas"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "samba-og-collegiate-green",
+    "name": "Adidas Samba OG Collegiate Green",
+    "brand": "Adidas",
+    "model": "Samba",
+    "color": "Collegiate Green/Cream White",
+    "price": 99.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44],
+    "image": "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green.jpeg",
+    "gallery": [
+      "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green-front.jpeg",
+      "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green-back.jpeg",
+      "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green-sole.jpeg",
+      "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green-show1.jpeg",
+      "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green-show2.jpeg",
+      "/assets/adidas/samba/og-collegiate-green/adidas-samba-og-collegiate-green-show3.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Collegiate Green uitvoering van de Samba OG brengt een sportieve vibe met klassieke lijnen en premium afwerking.",
+    "category": "sneakers",
+    "tags": ["groen", "sportief", "klassiek", "unisex", "adidas"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "samba-og-wonder-white-maroon",
+    "name": "Adidas Samba OG Wonder White Maroon",
+    "brand": "Adidas",
+    "model": "Samba",
+    "color": "Wonder White/Maroon",
+    "price": 99.99,
+    "sizes": [38, 39, 40, 41, 42],
+    "image": "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon.jpeg",
+    "gallery": [
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-front.jpeg",
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-back.jpeg",
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-sole.jpeg",
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-show1.jpeg",
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-show2.jpeg",
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-show3.jpeg",
+      "/assets/adidas/samba/wonder-white-maroon/adidas-samba-og-wonder-white-maroon-show4.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Wonder White en Maroon kleurencombinatie geeft de klassieke Samba OG een frisse twist die stijlvol en veelzijdig is.",
+    "category": "sneakers",
+    "tags": ["maroon", "vintage", "wit", "unisex", "adidas"],
+    "featured": false,
+    "hidden": false
+  }
+]

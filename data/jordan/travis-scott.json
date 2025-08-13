@@ -1,0 +1,213 @@
+[
+  {
+    "id": "air-jordan-1-low-travis-scott-black-phantom",
+    "name": "Air Jordan 1 Low Travis Scott",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "Black/Phantom",
+    "price": 219.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/black-phantom/air-jordan-1-low-sp-travis-scott-black-phantom.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/black-phantom/air-jordan-1-low-sp-travis-scott-black-phantom-front.jpeg",
+      "/assets/jordan/travis-scott/black-phantom/air-jordan-1-low-sp-travis-scott-black-phantom-back.jpeg",
+      "/assets/jordan/travis-scott/black-phantom/air-jordan-1-low-sp-travis-scott-black-phantom-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Air Jordan 1 Low Travis Scott Black Phantom heeft een volledig zwarte uitstraling met witte contraststiksels en de kenmerkende omgekeerde swoosh.",
+    "category": "sneakers",
+    "tags": ["nike", "jordan", "travis", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "jordan-1-retro-low-og-sp-travis-scott-canary",
+    "name": "Jordan 1 Retro Low OG SP Travis Scott",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "Canary/White/Blue",
+    "price": 209.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/canary/jordan-1-retro-low-og-sp-travis-scott-canary.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/canary/jordan-1-retro-low-og-sp-travis-scott-canary-front.jpeg",
+      "/assets/jordan/travis-scott/canary/jordan-1-retro-low-og-sp-travis-scott-canary-back.jpeg",
+      "/assets/jordan/travis-scott/canary/jordan-1-retro-low-og-sp-travis-scott-canary-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Travis Scott Jordan 1 Low 'Canary' combineert felgeel met koningsblauw voor een opvallende look.",
+    "category": "sneakers",
+    "tags": ["jordan", "travis", "canary", "streetwear"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "air-jordan-1-low-travis-scott-fragment",
+    "name": "Air Jordan 1 Low Travis Scott x Fragment",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "White/Black/Royal",
+    "price": 239.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/fragement/air-jordan1-low-travis-scott-fragement.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/fragement/air-jordan1-low-travis-scott-fragement-front.jpeg",
+      "/assets/jordan/travis-scott/fragement/air-jordan1-low-travis-scott-fragement-back.jpeg",
+      "/assets/jordan/travis-scott/fragement/air-jordan1-low-travis-scott-fragement-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Een samenwerking tussen Travis Scott en Fragment Design met klassieke kleuren en reversed swoosh.",
+    "category": "sneakers",
+    "tags": ["jordan", "fragment", "travis", "limited"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "air-jordan-1-high-travis-scott-cactus-jack",
+    "name": "Air Jordan 1 High Travis Scott Cactus Jack",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 High",
+    "color": "Brown/White/Black",
+    "price": 249.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/high-cactus-jack/air-jordan-1-retro-high-travis-scott-cactus-jack.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/high-cactus-jack/air-jordan-1-retro-high-travis-scott-cactus-jack-front.jpeg",
+      "/assets/jordan/travis-scott/high-cactus-jack/air-jordan-1-retro-high-travis-scott-cactus-jack-back.jpeg",
+      "/assets/jordan/travis-scott/high-cactus-jack/air-jordan-1-retro-high-travis-scott-cactus-jack-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De high-top versie van de Travis Scott samenwerking met iconische earthy tones en reversed swoosh.",
+    "category": "sneakers",
+    "tags": ["jordan", "travis", "cactus-jack", "high"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "air-jordan-1-low-travis-scott-medium-olive",
+    "name": "Air Jordan 1 Low Travis Scott Medium Olive",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "White/Medium Olive",
+    "price": 224.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/medium-olive/air-jordan-1-retro-low-og-sp-travis-scott-medium-olive.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/medium-olive/air-jordan-1-retro-low-og-sp-travis-scott-medium-olive-front.jpeg",
+      "/assets/jordan/travis-scott/medium-olive/air-jordan-1-retro-low-og-sp-travis-scott-medium-olive-back.jpeg",
+      "/assets/jordan/travis-scott/medium-olive/air-jordan-1-retro-low-og-sp-travis-scott-medium-olive-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Een zachte olijfkleurige variant van de populaire Travis Scott Low Jordan 1.",
+    "category": "sneakers",
+    "tags": ["jordan", "olive", "travis"],
+    "featured": false,
+    "hidden": false,
+     "popular": true
+  },
+  {
+    "id": "air-jordan-1-low-travis-scott-mocha",
+    "name": "Air Jordan 1 Low Travis Scott Mocha",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "Mocha/Black/White",
+    "price": 234.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/mocha/air-jordan-1-retro-low-travis-scott-mocha.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/mocha/air-jordan-1-retro-low-travis-scott-mocha-front.jpeg",
+      "/assets/jordan/travis-scott/mocha/air-jordan-1-retro-low-travis-scott-mocha-back.jpeg",
+      "/assets/jordan/travis-scott/mocha/air-jordan-1-retro-low-travis-scott-mocha-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De originele low-top Travis Scott Jordan 1 in de iconische 'mocha' kleurstelling.",
+    "category": "sneakers",
+    "tags": ["jordan", "travis", "mocha", "limited"],
+    "featured": false,
+    "hidden": false,
+     "popular": true
+  },
+  {
+    "id": "air-jordan-1-golf-travis-scott-neutral-olive",
+    "name": "Air Jordan 1 Golf Travis Scott Neutral Olive",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low Golf",
+    "color": "Neutral Olive/Black/White",
+    "price": 199.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/neutral-olive/air-jordan-1-retro-low-golf-travis-scott-neutral-olive.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/neutral-olive/air-jordan-1-retro-low-golf-travis-scott-neutral-olive-front.jpeg",
+      "/assets/jordan/travis-scott/neutral-olive/air-jordan-1-retro-low-golf-travis-scott-neutral-olive-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Golfversie van de Travis Scott Jordan 1 Low in neutrale olijfkleur.",
+    "category": "sneakers",
+    "tags": ["golf", "travis", "jordan", "olive"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "air-jordan-1-low-og-sp-travis-scott-olive",
+    "name": "Air Jordan 1 Low OG SP Travis Scott Olive",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "White/Black/Olive",
+    "price": 229.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/olive/air-jordan-1-retro-low-og-sp-travis-scott-olive.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/olive/air-jordan-1-retro-low-og-sp-travis-scott-olive-front.jpeg",
+      "/assets/jordan/travis-scott/olive/air-jordan-1-retro-low-og-sp-travis-scott-olive-back.jpeg",
+      "/assets/jordan/travis-scott/olive/air-jordan-1-retro-low-og-sp-travis-scott-olive-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Limited OG release van Travis Scott in white en olive kleurenschema.",
+    "category": "sneakers",
+    "tags": ["jordan", "travis", "og", "olive"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "air-jordan-1-low-travis-scott-reverse-mocha",
+    "name": "Air Jordan 1 Low Travis Scott Reverse Mocha",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "Reverse Mocha",
+    "price": 129.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/reverse-mocha/jordan-air-jordan-1-low-og-sp-ps-travis-scott-reverse-mocha.jpeg",
+    "gallery": [
+          "/assets/jordan/travis-scott/reverse-mocha/jordan-air-jordan-1-low-og-sp-ps-travis-scott-reverse-mocha-front.jpeg",
+          "/assets/jordan/travis-scott/reverse-mocha/jordan-air-jordan-1-low-og-sp-ps-travis-scott-reverse-mocha-back.jpeg",
+          "/assets/jordan/travis-scott/reverse-mocha/jordan-air-jordan-1-low-og-sp-ps-travis-scott-reverse-mocha-sole.jpeg"
+    ],
+    "gender": ["heren","dames"],
+    "description": "Kinderuitvoering van de populaire Reverse Mocha Travis Scott Jordan 1.",
+    "category": "sneakers",
+    "tags": ["jordan", "travis", "mocha"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "air-jordan-1-low-og-sp-travis-scott-velvet-brown",
+    "name": "Air Jordan 1 Low OG SP Travis Scott Velvet Brown",
+    "brand": "Air Jordan",
+    "model": "Air Jordan 1 Low",
+    "color": "Velvet Brown/Black",
+    "price": 219.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/jordan/travis-scott/velvet-brown/air-jordan-1-retro-low-og-sp-travis-scott-velvet-brown.jpeg",
+    "gallery": [
+      "/assets/jordan/travis-scott/velvet-brown/air-jordan-1-retro-low-og-sp-travis-scott-velvet-brown-front.jpeg",
+      "/assets/jordan/travis-scott/velvet-brown/air-jordan-1-retro-low-og-sp-travis-scott-velvet-brown-back.jpeg",
+      "/assets/jordan/travis-scott/velvet-brown/air-jordan-1-retro-low-og-sp-travis-scott-velvet-brown-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Donkerbruine Travis Scott Jordan 1 met luxe uitstraling en suède afwerking.",
+    "category": "sneakers",
+    "tags": ["jordan", "travis", "velvet", "brown"],
+    "featured": false,
+    "hidden": false
+  }
+]

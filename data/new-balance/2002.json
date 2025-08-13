@@ -1,0 +1,125 @@
+[
+  {
+    "id": "new-balance-2002r-concrete-grey",
+    "name": "New Balance 2002R concrete grey",
+    "brand": "New Balance",
+    "model": "2002R",
+    "color": "Concrete/Grey",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/2002R/concrete-grey/new-balance-2002r-concrete-grey.jpeg",
+    "gallery": [
+      "/assets/new-balance/2002R/concrete-grey/new-balance-2002r-concrete-grey.jpeg",
+      "/assets/new-balance/2002R/concrete-grey/new-balance-2002r-concrete-grey.jpeg",
+      "/assets/new-balance/2002R/concrete-grey/new-balance-2002r-concrete-grey.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 2002R Concrete Grey combineert retro stijl met moderne demping voor dagelijks comfort.",
+    "category": "sneakers",
+    "tags": ["new balance", "2002r", "retro", "comfort"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-2002r-gore-tex-navy-arctic-grey",
+    "name": "New Balance 2002R gore tex navy-arctic-grey",
+    "brand": "New Balance",
+    "model": "2002R",
+    "color": "Navy/Arctic Grey",
+    "price": 179.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/2002R/core-tex-navy-arctic-grey/new-balance-2002r-gore-tex-navy-arctic-grey.jpeg",
+    "gallery": [
+      "/assets/new-balance/2002R/core-tex-navy-arctic-grey/new-balance-2002r-gore-tex-navy-arctic-grey-front.jpeg",
+      "/assets/new-balance/2002R/core-tex-navy-arctic-grey/new-balance-2002r-gore-tex-navy-arctic-grey-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Deze GORE-TEX editie van de 2002R is waterdicht en stijlvol voor elk seizoen.",
+    "category": "sneakers",
+    "tags": ["new balance", "gore-tex", "outdoor", "2002r"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-2002r-linen",
+    "name": "New Balance 2002R linen",
+    "brand": "New Balance",
+    "model": "2002R",
+    "color": "Linen",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/2002R/linnen/new-balance-2002r-linen.jpeg",
+    "gallery": [
+      "/assets/new-balance/2002R/linnen/new-balance-2002r-linen-front.jpeg",
+      "/assets/new-balance/2002R/linnen/new-balance-2002r-linen-back.jpeg",
+      "/assets/new-balance/2002R/linnen/new-balance-2002r-linen-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 2002R Linen heeft een zachte en natuurlijke uitstraling met premium materialen.",
+    "category": "sneakers",
+    "tags": ["new balance", "linnen", "clean", "2002r"],
+    "featured": true,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-2002r-magnet",
+    "name": "New Balance 2002R magnet",
+    "brand": "New Balance",
+    "model": "2002R",
+    "color": "Magnet/Phantom",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/2002R/magnet/new-balance-2002r-magnet.jpeg",
+    "gallery": [
+      "/assets/new-balance/2002R/magnet/new-balance-2002r-magnet-front.jpeg",
+      "/assets/new-balance/2002R/magnet/new-balance-2002r-magnet-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Strakke kleuren en demping maken de Magnet versie van de 2002R perfect voor dagelijks gebruik.",
+    "category": "sneakers",
+    "tags": ["new balance", "2002r", "magnet", "stijlvol"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-2002r-olive-brown",
+    "name": "New Balance 2002R olive brown",
+    "brand": "New Balance",
+    "model": "2002R",
+    "color": "Olive/Brown",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/2002R/olive-brown/new-balance-2002r-olive-brown.jpeg",
+    "gallery": [
+      "/assets/new-balance/2002R/olive-brown/new-balance-2002r-olive-brown-front.jpeg",
+      "/assets/new-balance/2002R/olive-brown/new-balance-2002r-olive-brown-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "Een aardse uitvoering van de 2002R met rijke olijf- en bruintinten.",
+    "category": "sneakers",
+    "tags": ["new balance", "2002r", "natuurlijk", "groen"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "new-balance-2002r-eclipse-raincloud",
+    "name": "New Balance 2002R eclipse raincloud",
+    "brand": "New Balance",
+    "model": "2002R",
+    "color": "Eclipse/Raincloud",
+    "price": 159.99,
+    "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+    "image": "/assets/new-balance/2002R/raincloud/new-balance-2002r-eclipse-raincloud.jpeg",
+    "gallery": [
+      "/assets/new-balance/2002R/raincloud/new-balance-2002r-eclipse-raincloud-front.jpeg",
+      "/assets/new-balance/2002R/raincloud/new-balance-2002r-eclipse-raincloud-back.jpeg",
+      "/assets/new-balance/2002R/raincloud/new-balance-2002r-eclipse-raincloud-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De New Balance 2002R Eclipse Raincloud biedt subtiele contrasten en een klassiek silhouet.",
+    "category": "sneakers",
+    "tags": ["new balance", "2002r", "eclipse", "minimal"],
+    "featured": false,
+    "hidden": false
+  }
+]

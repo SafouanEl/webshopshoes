@@ -1,0 +1,87 @@
+[
+  {
+    "id": "handball-spezial-wonder-beige",
+    "name": "Adidas Handball Spezial Wonder Beige",
+    "brand": "Adidas",
+    "model": "Spezial",
+    "color": "Wonder Beige/Cloud White",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/adidas/spezial/wonder-beige/adidas-handball-spezial-wmns-wonder-beige.jpeg",
+    "gallery": [
+      "/assets/adidas/spezial/wonder-beige/adidas-handball-spezial-wmns-wonder-beige-front.jpeg",
+      "/assets/adidas/spezial/wonder-beige/adidas-handball-spezial-wmns-wonder-beige-back.jpeg",
+      "/assets/adidas/spezial/wonder-beige/adidas-handball-spezial-wmns-wonder-beige-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "De Adidas Handball Spezial in Wonder Beige biedt een frisse en zachte look met een klassieke gumzool. Perfect voor een cleane, moderne stijl.",
+    "category": "sneakers",
+    "tags": ["beige", "clean", "vintage", "handball", "adidas"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "handball-spezial-clear-sky",
+    "name": "Adidas Handball Spezial Clear Sky",
+    "brand": "Adidas",
+    "model": "Spezial",
+    "color": "Clear Sky/Cloud White",
+    "price": 99.99,
+    "sizes": [36, 37, 38, 39, 40, 41],
+    "image": "/assets/adidas/spezial/clear-sky/adidas-handball-spezial-wmns-clear-sky.jpeg",
+    "gallery": [
+      "/assets/adidas/spezial/clear-sky/adidas-handball-spezial-wmns-clear-sky-front.jpeg",
+      "/assets/adidas/spezial/clear-sky/adidas-handball-spezial-wmns-clear-sky-back.jpeg",
+      "/assets/adidas/spezial/clear-sky/adidas-handball-spezial-wmns-clear-sky-sole.jpeg"
+    ],
+    "gender": ["dames"],
+    "description": "Een frisse blauwe tint maakt deze Spezial tot een echte eyecatcher. De zachte suède afwerking en vintage gumzool maken het af.",
+    "category": "sneakers",
+    "tags": ["blauw", "vintage", "spezial", "adidas", "dames"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "handball-spezial-shadow-brown",
+    "name": "Adidas Handball Spezial Shadow Brown",
+    "brand": "Adidas",
+    "model": "Spezial",
+    "color": "Shadow Brown/Alumina",
+    "price": 99.99,
+    "sizes": [38, 39, 40, 41, 42, 43],
+    "image": "/assets/adidas/spezial/brown-alumina/adidas-handball-spezial-shadow-brown-alumina.jpeg",
+    "gallery": [
+     "/assets/adidas/spezial/brown-alumina/adidas-handball-spezial-shadow-brown-alumina-front.jpeg",
+     "/assets/adidas/spezial/brown-alumina/adidas-handball-spezial-shadow-brown-alumina-back.jpeg",
+     "/assets/adidas/spezial/brown-alumina/adidas-handball-spezial-shadow-brown-alumina-sole.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Shadow Brown Handball Spezial combineert een rijke aardetint met klassieke stijl en moderne draagbaarheid.",
+    "category": "sneakers",
+    "tags": ["bruin", "earthtone", "unisex", "retro", "spezial"],
+    "featured": false,
+    "hidden": false
+  },
+  {
+    "id": "handball-spezial-earth-strata",
+    "name": "Adidas Handball Spezial Earth Strata",
+    "brand": "Adidas",
+    "model": "Spezial",
+    "color": "Earth Strata/Off White",
+    "price": 99.99,
+    "sizes": [38, 39, 40, 41, 42],
+    "image": "/assets/adidas/spezial/earth strata/adidas-handball-spezial-wmns-earth-strata-gum.jpeg",
+    "gallery": [
+      "/assets/adidas/spezial/earth strata/adidas-handball-spezial-wmns-earth-strata-gum-front.jpeg",
+      "/assets/adidas/spezial/earth strata/adidas-handball-spezial-wmns-earth-strata-gum-back.jpeg",
+      "/assets/adidas/spezial/earth strata/adidas-handball-spezial-wmns-earth-strata-gum-sole.jpeg",
+      "/assets/adidas/spezial/earth strata/adidas-handball-spezial-wmns-earth-strata-gum-show1.jpeg"
+    ],
+    "gender": ["heren", "dames"],
+    "description": "De Earth Strata uitvoering van de Handball Spezial is een eerbetoon aan vintage stijl met een moderne twist in materiaalgebruik.",
+    "category": "sneakers",
+    "tags": ["earthtone", "minimalistisch", "vintage", "handball", "adidas"],
+    "featured": false,
+    "hidden": false
+  }
+]
