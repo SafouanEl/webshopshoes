@@ -55,27 +55,31 @@ function extractSubfilters(producten: Product[]): Record<string, Set<string>> {
   return result;
 }
 function createSlug(name: string): string {
-  return name.toLowerCase()
-             .replace(/\s+/g, '-')           // spaties → koppeltekens
-             .replace(/[^a-z0-9\-]/g, '')    // speciale tekens weg
-             .trim();
+  return name
+    .toLowerCase()
+    .replace(/\s+/g, "-") // spaties → koppeltekens
+    .replace(/[^a-z0-9\-]/g, "") // speciale tekens weg
+    .trim();
 }
 
 app.get("/", (req, res) => {
   const dataDir = path.join(__dirname, "data");
   const alleProducten = getAllProducts(dataDir);
 
-  const shuffleArray = <T>(arr: T[]): T[] => arr.sort(() => Math.random() - 0.5);
+  const shuffleArray = <T>(arr: T[]): T[] =>
+    arr.sort(() => Math.random() - 0.5);
 
   const featuredProducten = shuffleArray(
-    alleProducten.filter(p => p.featured && !p.hidden)
+    alleProducten.filter((p) => p.featured && !p.hidden)
   );
 
-  const populaireProducten = alleProducten.filter(p => p.popular && !p.hidden);
+  const populaireProducten = alleProducten.filter(
+    (p) => p.popular && !p.hidden
+  );
 
   res.render("index", {
     producten: featuredProducten,
-    populaire: populaireProducten
+    populaire: populaireProducten,
   });
 });
 
@@ -84,16 +88,13 @@ app.get("/search", (req, res) => {
   const alleProducten = getAllProducts(dataDir);
   const query = req.query.q?.toString().toLowerCase().trim() || "";
 
-
-  let gevonden = alleProducten.filter(p => {
+  let gevonden = alleProducten.filter((p) => {
     const name = p.name?.toLowerCase() || "";
     const brand = p.brand?.toLowerCase() || "";
     const model = p.model?.toLowerCase() || "";
     return (
       !p.hidden &&
-      (name.includes(query) ||
-       brand.includes(query) ||
-       model.includes(query))
+      (name.includes(query) || brand.includes(query) || model.includes(query))
     );
   });
 
@@ -113,7 +114,7 @@ app.get("/search", (req, res) => {
     gender: null,
     genderLabel: `Zoekresultaten voor "${query}"`,
     selectedBrand: null,
-    selectedModel: null
+    selectedModel: null,
   });
 });
 
@@ -122,15 +123,13 @@ app.get("/api/search-suggest", (req, res) => {
   const alleProducten = getAllProducts(path.join(__dirname, "data"));
 
   const resultaten = alleProducten
-    .filter(p => {
+    .filter((p) => {
       const name = p.name?.toLowerCase() || "";
       const brand = p.brand?.toLowerCase() || "";
       const model = p.model?.toLowerCase() || "";
       return (
         !p.hidden &&
-        (name.includes(query) ||
-         brand.includes(query) ||
-         model.includes(query))
+        (name.includes(query) || brand.includes(query) || model.includes(query))
       );
     })
     .slice(0, 6); // max 6 suggesties
@@ -138,12 +137,11 @@ app.get("/api/search-suggest", (req, res) => {
   res.json(resultaten);
 });
 
-
 app.get("/api/sneakers", (req, res) => {
   const dataDir = path.join(__dirname, "data");
   const alleProducten: Product[] = getAllProducts(dataDir);
 
-  let sneakers = alleProducten.filter(p => !p.hidden);
+  let sneakers = alleProducten.filter((p) => !p.hidden);
 
   const brandsQuery = req.query.brands?.toString().toLowerCase();
   const modelQuery = req.query.model?.toString().toLowerCase();
@@ -154,31 +152,35 @@ app.get("/api/sneakers", (req, res) => {
     dames: "dames",
     heren: "heren",
     man: "heren",
-    men: "heren"
+    men: "heren",
   };
 
   const gender = genderQuery && genderMap[genderQuery];
 
   if (gender) {
-    sneakers = sneakers.filter(p =>
+    sneakers = sneakers.filter((p) =>
       typeof p.gender === "string"
         ? p.gender.toLowerCase().includes(gender)
         : Array.isArray(p.gender)
-        ? p.gender.map(g => g.toLowerCase()).includes(gender)
+        ? p.gender.map((g) => g.toLowerCase()).includes(gender)
         : false
     );
   }
 
   if (brandsQuery) {
-    const brands = brandsQuery.split(",").map(b => b.trim());
-    sneakers = sneakers.filter(p =>
-      typeof p.brand === "string" && brands.some(b => p.brand!.toLowerCase().includes(b))
+    const brands = brandsQuery.split(",").map((b) => b.trim());
+    sneakers = sneakers.filter(
+      (p) =>
+        typeof p.brand === "string" &&
+        brands.some((b) => p.brand!.toLowerCase().includes(b))
     );
   }
 
   if (modelQuery) {
-    sneakers = sneakers.filter(p =>
-      typeof p.model === "string" && p.model.toLowerCase().includes(modelQuery)
+    sneakers = sneakers.filter(
+      (p) =>
+        typeof p.model === "string" &&
+        p.model.toLowerCase().includes(modelQuery)
     );
   }
 
@@ -198,7 +200,7 @@ app.get("/shop", (req, res) => {
   const dataDir = path.join(__dirname, "data");
   const alleProducten: Product[] = getAllProducts(dataDir);
 
-  let filtered = alleProducten.filter(p => !p.hidden);
+  let filtered = alleProducten.filter((p) => !p.hidden);
   const brand = req.query.brand?.toString().toLowerCase();
   const model = req.query.model?.toString().toLowerCase();
 
@@ -207,31 +209,33 @@ app.get("/shop", (req, res) => {
     dames: "dames",
     heren: "heren",
     man: "heren",
-    men: "heren"
+    men: "heren",
   };
 
   const genderParam = req.query.gender?.toString().toLowerCase();
   const gender = genderParam && genderMap[genderParam];
 
   if (gender) {
-    filtered = filtered.filter(p =>
+    filtered = filtered.filter((p) =>
       typeof p.gender === "string"
         ? p.gender.toLowerCase().includes(gender)
         : Array.isArray(p.gender)
-        ? p.gender.map(g => g.toLowerCase()).includes(gender)
+        ? p.gender.map((g) => g.toLowerCase()).includes(gender)
         : false
     );
   }
 
   if (brand) {
-    filtered = filtered.filter(p =>
-      typeof p.brand === "string" && p.brand.toLowerCase().includes(brand)
+    filtered = filtered.filter(
+      (p) =>
+        typeof p.brand === "string" && p.brand.toLowerCase().includes(brand)
     );
   }
 
   if (model) {
-    filtered = filtered.filter(p =>
-      typeof p.model === "string" && p.model.toLowerCase().includes(model)
+    filtered = filtered.filter(
+      (p) =>
+        typeof p.model === "string" && p.model.toLowerCase().includes(model)
     );
   }
 
@@ -267,30 +271,30 @@ app.get("/shop", (req, res) => {
     gender: gender || null,
     genderLabel,
     selectedBrand,
-    selectedModel
+    selectedModel,
   });
 });
-
-
-
 
 app.get("/product/:id", (req, res) => {
   const dataDir = path.join(__dirname, "data");
   const alleProducten = getAllProducts(dataDir);
   const id = req.params.id;
 
-  const product = alleProducten.find(p => p.id === id);
+  const product = alleProducten.find((p) => p.id === id);
   if (!product) {
     return res.status(404).send("Product niet gevonden");
   }
 
   const variants = alleProducten.filter(
-    p => p.model === product.model && p.id !== product.id
+    (p) => p.model === product.model && p.id !== product.id
   );
 
   // 🔍 Related: zelfde merk, ander model en niet het huidige product
   let related = alleProducten.filter(
-    p => p.brand === product.brand && p.model !== product.model && p.id !== product.id
+    (p) =>
+      p.brand === product.brand &&
+      p.model !== product.model &&
+      p.id !== product.id
   );
 
   // 🔀 Shuffle array (Fisher-Yates)
@@ -302,10 +306,9 @@ app.get("/product/:id", (req, res) => {
   res.render("product-detail", {
     product,
     variants,
-    related // 👈 Stuur mee naar je EJS
+    related, // 👈 Stuur mee naar je EJS
   });
 });
-
 
 app.get("/about", (req, res) => {
   res.render("about");
@@ -315,8 +318,7 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-
-
-app.listen(app.get("port"), () => {
-  console.log("Server started on http://localhost:" + app.get("port"));
-});
+// app.listen(app.get("port"), () => {
+//   console.log("Server started on http://localhost:" + app.get("port"));
+// });
+export default app;
