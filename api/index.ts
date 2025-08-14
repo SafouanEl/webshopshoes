@@ -1,5 +1,3 @@
-// api/index.ts
 import serverless from "serverless-http";
-import app from "../index";
-
-export default serverless(app); // geen app.listen hier!
+import app from "../index"; // of waar je Express-app staat
+export default serverless(app);
