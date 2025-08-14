@@ -1,7 +1,6 @@
 import express, { Express } from "express";
 import dotenv from "dotenv";
 import path from "path";
-const ROOT = process.cwd();
 import fs from "fs";
 import { Product } from "./interface";
 
@@ -12,8 +11,8 @@ const app: Express = express();
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(ROOT, "public")));
-app.set("views", path.join(ROOT, "views"));
+app.use(express.static(path.join(__dirname, "public")));
+app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT ?? 3000);
 
@@ -139,7 +138,7 @@ app.get("/api/search-suggest", (req, res) => {
 });
 
 app.get("/api/sneakers", (req, res) => {
-  const dataDir = path.join(ROOT, "data");
+  const dataDir = path.join(__dirname, "data");
   const alleProducten: Product[] = getAllProducts(dataDir);
 
   let sneakers = alleProducten.filter((p) => !p.hidden);
@@ -319,7 +318,7 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-// app.listen(app.get("port"), () => {
-//   console.log("Server started on http://localhost:" + app.get("port"));
-// });
-export default app;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
