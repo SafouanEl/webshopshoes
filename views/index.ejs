@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <title>Schoenen Webshop</title>
-</head>
-<body>
-
-  <div class="promo-bar">
-    <div class="promo-track" id="promo-track">
-      <span class="promo-item"><i data-lucide="truck"></i>Gratis verzending NL & BE</span>
-      <span class="promo-item"><i data-lucide="check-circle"></i>100% Kwaliteit gegarandeerd</span>
-      <span class="promo-item"><i data-lucide="clock"></i>14 dagen bedenktijd</span>
-      <span class="promo-item"><i data-lucide="shopping-cart"></i>Shop nu en ontdek onze kortingdeals!</span>
-      <span class="promo-item"><i data-lucide="sparkles"></i>Nieuwe collecties binnen!</span>
-    </div>
-  </div>
-
-  <%- include('partials/header') %>
-
-  <section class="hero-banner">
-    <div class="hero-content">
-      <h2>Welcome to Shoe-plug</h2>
-      <p>Shoe-plug staat voor exclusieve sneakers — premium kwaliteit aan een eerlijke prijs.</p>
-      <div class="hero-buttons">
-        <a href="/shop?gender=heren" class="hero-btn">Shop Men</a>
-        <a href="/shop?gender=dames" class="hero-btn">Shop Woman</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Schoenen Webshop</title>
+  </head>
+  <body>
+    <div class="promo-bar">
+      <div class="promo-track" id="promo-track">
+        <span class="promo-item"
+          ><i data-lucide="truck"></i>Gratis verzending NL & BE</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="check-circle"></i>100% Kwaliteit gegarandeerd</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="clock"></i>14 dagen bedenktijd</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="shopping-cart"></i>Shop nu en ontdek onze
+          kortingdeals!</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="sparkles"></i>Nieuwe collecties binnen!</span
+        >
       </div>
     </div>
-  </section>
 
-  <main>
-    <section class="featured-products">
-      <h2>NEW ARRIVALS</h2>
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <% producten.forEach(product => { %>
-        <a href="/product/<%= product.id %>" class="carousel-item">
-          <img src="<%= product.image %>" alt="<%= product.name %>">
-          <p class="product-name"><%= product.name %></p>
-          <!-- <p class="product-price">Van €<%= product.price.toFixed(2) %></p> -->
-        </a>
-      <% }) %>
+    <%- include('partials/header') %>
+
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h2>Welcome to Shoe-plug</h2>
+        <p>
+          Shoe-plug staat voor exclusieve sneakers — premium kwaliteit aan een
+          eerlijke prijs.
+        </p>
+        <div class="hero-buttons">
+          <a href="/shop?gender=heren" class="hero-btn">Shop Men</a>
+          <a href="/shop?gender=dames" class="hero-btn">Shop Woman</a>
         </div>
       </div>
     </section>
 
-    <section class="collections-section">
-      <h2>Shop by brand</h2>
-      <div class="collections-grid">
-        <a href="/shop?brand=nike" class="brand-box">
-          <img src="/assets/brands/nike.jpeg" alt="Nike" />
-        </a>
-        <a href="/shop?brand=adidas" class="brand-box">
-          <img src="/assets/brands/adidas.jpeg" alt="Adidas" />
-        </a>
-        <a href="/shop?brand=jordan" class="brand-box">
-          <img src="/assets/brands/jordan.jpeg" alt="Jordan" />
-        </a>
-        <a href="/shop?brand=new balance" class="brand-box">
-          <img src="/assets/brands/new-balance.jpeg" alt="New Balance" />
-        </a>
-        <a href="/shop?brand=asics" class="brand-box">
-          <img src="/assets/brands/asics.jpeg" alt="Asics" />
-        </a>
-        <a href="/shop?brand=ugg&gender=dames" class="brand-box">
-          <img src="/assets/brands/ugg.jpeg" alt="UGG" />
-        </a>
-      </div>
-    </section>
+    <main>
+      <section class="featured-products">
+        <h2>NEW ARRIVALS</h2>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <% producten.forEach(product => { %>
+            <a href="/product/<%= product.id %>" class="carousel-item">
+              <img src="<%= product.image %>" alt="<%= product.name %>" />
+              <p class="product-name"><%= product.name %></p>
+              <!-- <p class="product-price">Van €<%= product.price.toFixed(2) %></p> -->
+            </a>
+            <% }) %>
+          </div>
+        </div>
+      </section>
 
- <!-- <section class="popular-products">
+      <section class="collections-section">
+        <h2>Shop by brand</h2>
+        <div class="collections-grid">
+          <a href="/shop?brand=nike" class="brand-box">
+            <img src="/assets/brands/nike.jpeg" alt="Nike" />
+          </a>
+          <a href="/shop?brand=adidas" class="brand-box">
+            <img src="/assets/brands/adidas.jpeg" alt="Adidas" />
+          </a>
+          <a href="/shop?brand=jordan" class="brand-box">
+            <img src="/assets/brands/jordan.jpeg" alt="Jordan" />
+          </a>
+          <a href="/shop?brand=new balance" class="brand-box">
+            <img src="/assets/brands/new-balance.jpeg" alt="New Balance" />
+          </a>
+          <a href="/shop?brand=asics" class="brand-box">
+            <img src="/assets/brands/asics.jpeg" alt="Asics" />
+          </a>
+          <a href="/shop?brand=ugg&gender=dames" class="brand-box">
+            <img src="/assets/brands/ugg.jpeg" alt="UGG" />
+          </a>
+        </div>
+      </section>
+
+      <!-- <section class="popular-products">
   <h2>Populairste Producten</h2>
   <div class="popular-grid">
     <% populaire.slice(0, 4).forEach(product => { %>
@@ -87,47 +104,45 @@
   </div>
 </section> -->
 
+      <section class="how-it-works">
+        <div class="container">
+          <h2>Hoe werkt het?</h2>
+          <div class="steps">
+            <div class="step">
+              <span>1</span>
+              <p>Bekijk onze collectie op de site of socials</p>
+            </div>
+            <div class="step">
+              <span>2</span>
+              <p>
+                Stuur ons een bericht met de schoen(en) die je wilt (screenshot
+                of naam)
+              </p>
+            </div>
+            <div class="step">
+              <span>3</span>
+              <p>We reageren snel met info over maten, voorraad en levering</p>
+            </div>
+            <div class="step">
+              <span>4</span>
+              <p>
+                Klaar? Dan ronden we je bestelling af via jouw gekozen platform
+              </p>
+            </div>
+          </div>
+          <p class="small-text">
+            Je vindt al onze contactlinks in de footer of op de
+            <a href="/contact">contactpagina</a>.
+          </p>
+        </div>
+      </section>
+    </main>
 
+    <%- include('partials/footer') %>
 
-
-
-    <section class="how-it-works">
-  <div class="container">
-    <h2>Hoe werkt het?</h2>
-    <div class="steps">
-      <div class="step">
-        <span>1</span>
-        <p>Bekijk onze collectie op de site of socials</p>
-      </div>
-      <div class="step">
-        <span>2</span>
-        <p>Stuur ons een bericht met de schoen(en) die je wilt (screenshot of naam)</p>
-      </div>
-      <div class="step">
-        <span>3</span>
-        <p>We reageren snel met info over maten, voorraad en levering</p>
-      </div>
-      <div class="step">
-        <span>4</span>
-        <p>Klaar? Dan ronden we je bestelling af via jouw gekozen platform</p>
-      </div>
-    </div>
-    <p class="small-text">Je vindt al onze contactlinks in de footer of op de <a href="/contact">contactpagina</a>.</p>
-  </div>
-</section>
-
-
-  
-  </main>
-  
-
-
-
-  <%- include('partials/footer') %>
-
-  <script>
-    lucide.createIcons();
-  </script>
-</body>
-
+    <script>
+      lucide.createIcons();
+    </script>
+    <%- include('partials/whatsapp') %>
+  </body>
 </html>

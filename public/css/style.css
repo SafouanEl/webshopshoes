@@ -4,12 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
   background-color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -20,9 +21,7 @@ main {
   flex: 1;
 }
 
-
 /* ========== promo bar boven header ========== */
-
 
 .promo-bar {
   overflow: hidden;
@@ -33,7 +32,7 @@ main {
   border-bottom: 1px solid #333;
   font-size: 1rem;
 
-   min-height: 2.5rem;
+  min-height: 2.5rem;
 }
 
 .promo-track {
@@ -48,15 +47,12 @@ main {
   color: #aaa;
 }
 
-
 .promo-item svg {
   margin-right: 0.5rem;
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
 }
-
-
 
 /* ========== HEADER STRUCTUUR ========== */
 header {
@@ -80,7 +76,6 @@ header {
   color: #000;
   text-decoration: none;
 }
-
 
 /* ========== NAVIGATIE LINKS (DESKTOP) ========== */
 .mid-nav {
@@ -114,7 +109,6 @@ header {
   width: 100%;
 }
 
-
 /* ========== RECHTER ZIJDE HEADER ========== */
 .right-nav {
   display: flex;
@@ -137,7 +131,6 @@ header {
   position: relative;
 }
 
-
 .cart-icon,
 .profile-icon {
   background: none;
@@ -149,7 +142,6 @@ header {
   justify-content: center;
   text-decoration: none;
 }
-
 
 /* ========== DESKTOP ZOEKVELD ========== */
 .search-form {
@@ -301,7 +293,7 @@ header {
   width: 70%;
   height: 100vh;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 2rem;
   transition: left 0.3s ease-in-out;
   z-index: 1000;
@@ -333,7 +325,6 @@ header {
   right: 1rem;
   cursor: pointer;
 }
-
 
 /* ========== MOBIELE ZOEKVELD (HIDDEN DEFAULT) ========== */
 .mobile-search-bar {
@@ -398,7 +389,7 @@ header {
     display: block;
   }
 
- .nav-class {
+  .nav-class {
     padding: 1rem;
     flex-wrap: nowrap;
     gap: 1rem;
@@ -418,7 +409,7 @@ header {
     font-size: 1.3rem;
   }
 
-    .cart-icon,
+  .cart-icon,
   .search-icon {
     min-width: 24px;
   }
@@ -435,7 +426,6 @@ header {
     font-size: 1.2rem;
   }
 }
-
 
 /* ========== shop-car ========== */
 
@@ -454,7 +444,6 @@ header {
   flex-direction: column;
   padding: 1rem;
 }
-
 
 .cart-sidebar.show {
   right: 0;
@@ -532,7 +521,6 @@ header {
   display: none;
 }
 
-
 .cart-count {
   position: absolute;
   top: -6px;
@@ -547,7 +535,6 @@ header {
 .cart-count.hidden {
   display: none;
 }
-
 
 /* ========== popup afrekenen ========== */
 
@@ -572,7 +559,7 @@ header {
   border-radius: 10px;
   max-width: 400px;
   width: 90%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
 }
@@ -596,7 +583,7 @@ header {
 }
 
 .whatsapp-btn {
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
@@ -608,15 +595,11 @@ header {
   font-size: 1rem;
 }
 
-
-
-
-
 /* ========== HERO BANNER (HOME PAGE) ========== */
 .hero-banner {
   position: relative;
   min-height: 28.125rem; /* 450px → 28.125rem */
-  background-image: url('/assets/banners/webshop-banner.jpeg');
+  background-image: url("/assets/banners/webshop-banner.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -684,11 +667,9 @@ header {
   white-space: nowrap;
 }
 
-
 .hero-btn:hover {
   background: #000;
 }
-
 
 /* ========== featerd-products ========== */
 
@@ -719,7 +700,6 @@ header {
   padding-left: 1rem;
   padding-right: 2rem; /* 👈 extra ruimte aan einde */
 }
-
 
 .carousel-item {
   flex: 0 0 19%; /* 👈 kleiner dan 20%, zodat er nét geen 6 op passen */
@@ -778,7 +758,6 @@ header {
 
 /* ========== collection ========== */
 
-
 .collections-section {
   padding: 3rem 1rem;
   background-color: #fff;
@@ -810,7 +789,6 @@ header {
   width: clamp(8rem, 12vw, 12rem); /* responsief */
 }
 
-
 .brand-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -821,7 +799,6 @@ header {
   max-width: 100%;
   object-fit: contain;
 }
-
 
 @media (max-width: 600px) {
   .brand-box {
@@ -887,7 +864,7 @@ header {
     width: calc(50% - 1rem);
   }
 
-   .product-name {
+  .product-name {
     font-size: 0.85rem;
     line-height: 1.2;
   }
@@ -896,11 +873,6 @@ header {
     font-size: 0.85rem;
   }
 }
-
-
-
-
-
 
 /* ========== truspilot section ========== */
 
@@ -997,7 +969,7 @@ header {
   border-radius: 12px;
   padding: 1.5rem;
   text-align: left;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .step span {
@@ -1021,7 +993,7 @@ header {
 
 .small-text {
   margin-top: 2rem;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   color: #555;
 }
 
@@ -1029,13 +1001,16 @@ header {
   color: #000;
 }
 
-
 @media (max-width: 768px) {
   .step {
     flex: 1 1 100%;
   }
+  .small-text {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #555;
+  }
 }
-
 
 /* ========== shop-men ========== */
 .shop-page h1 {
@@ -1057,7 +1032,6 @@ header {
   padding-right: 1rem;
   padding-left: 0.5rem; /* ⬅️ extra ruimte links van de dropdowns */
 }
-
 
 .filter-dropdown {
   border-bottom: 1px solid #ddd;
@@ -1095,7 +1069,6 @@ header {
   gap: 0.4rem;
 }
 
-
 .product-list {
   flex: 1;
   padding-left: 1rem;
@@ -1105,7 +1078,6 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1rem;
-  
 }
 
 .product-tile img {
@@ -1142,7 +1114,6 @@ header {
 .product-name:hover {
   text-decoration: underline; /* optioneel voor hover-effect */
 }
-
 
 .pagination {
   display: flex;
@@ -1186,7 +1157,7 @@ header {
 
 /* 📱 Alleen tonen op mobiel */
 @media (max-width: 768px) {
-.filter-button-wrapper {
+  .filter-button-wrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -1232,19 +1203,14 @@ header {
   }
 
   .product-tile img {
-  
-  min-width: 120px; /* pas aan naar gewenste grootte */
-  
-}
+    min-width: 120px; /* pas aan naar gewenste grootte */
+  }
 }
 @media (max-width: 290px) {
   .product-grid {
     grid-template-columns: 1fr; /* 1 per rij als het echt smal wordt */
   }
-
-  
 }
-
 
 /* 📱 Overlay donker achtergrond */
 .mobile-filter-overlay {
@@ -1305,7 +1271,6 @@ header {
   transform: translateX(0);
 }
 
-
 /* alleen op mobiel */
 @media (min-width: 769px) {
   .mobile-filter-overlay {
@@ -1352,8 +1317,6 @@ header {
 .close-button:hover {
   background-color: #f2f2f2;
 }
-
-
 
 /* ========== footer ========== */
 
@@ -1412,7 +1375,6 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
 }
-
 
 /* ===============================
    📦 Layout: Product Detail Wrapper
@@ -1493,8 +1455,6 @@ footer {
   }
 }
 
-
-
 /* ===============================
       🎁 korting banner
    =============================== */
@@ -1532,8 +1492,6 @@ footer {
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 } */
-
-
 
 /* ===============================
    🛍️ Product Info & Varianten
@@ -1666,8 +1624,6 @@ footer {
   color: #333;
 }
 
-
-
 /* ===============================
    🧑‍💼 USPs (Garantie, Service etc.)
    =============================== */
@@ -1695,7 +1651,7 @@ footer {
   align-items: center;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   flex: 1;
   min-width: 280px;
   gap: 1rem;
@@ -1783,9 +1739,11 @@ footer {
    =============================== */
 .image-overlay {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1833,7 +1791,6 @@ footer {
   display: none;
 }
 
-
 #mainProductImage {
   cursor: pointer;
 }
@@ -1857,7 +1814,6 @@ footer {
    📱 Extra optimalisatie voor kleine schermen (max 480px)
    =============================== */
 @media (max-width: 480px) {
-
   .product-detail-wrapper {
     flex-direction: column;
     padding: 1rem;
@@ -1994,7 +1950,6 @@ footer {
   }
 } */
 
-
 /* ABOUT PAGE */
 .about-container {
   max-width: 1000px;
@@ -2029,10 +1984,15 @@ footer {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 /* ========== CONTACT PAGE ========== */
 
@@ -2094,11 +2054,19 @@ footer {
 
 /* Fade in effect dat matched met about-us */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.how-works-list, .contact-channels, .socials-promo {
+.how-works-list,
+.contact-channels,
+.socials-promo {
   padding-left: 4rem; /* Of 30px, of 3em, wat jij mooi vindt */
   margin-top: 1rem;
   line-height: 1.8;

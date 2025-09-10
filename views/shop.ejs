@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Schoenen Webshop</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-
-  <div class="promo-bar">
-    <div class="promo-track" id="promo-track">
-      <span class="promo-item"><i data-lucide="truck"></i>Gratis verzending NL & BE</span>
-      <span class="promo-item"><i data-lucide="check-circle"></i>100% Kwaliteit gegarandeerd</span>
-      <span class="promo-item"><i data-lucide="clock"></i>14 dagen bedenktijd</span>
-      <span class="promo-item"><i data-lucide="shopping-cart"></i>Shop nu en ontdek onze kortingdeals!</span>
-      <span class="promo-item"><i data-lucide="sparkles"></i>Nieuwe collecties binnen!</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schoenen Webshop</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="promo-bar">
+      <div class="promo-track" id="promo-track">
+        <span class="promo-item"
+          ><i data-lucide="truck"></i>Gratis verzending NL & BE</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="check-circle"></i>100% Kwaliteit gegarandeerd</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="clock"></i>14 dagen bedenktijd</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="shopping-cart"></i>Shop nu en ontdek onze
+          kortingdeals!</span
+        >
+        <span class="promo-item"
+          ><i data-lucide="sparkles"></i>Nieuwe collecties binnen!</span
+        >
+      </div>
     </div>
-  </div>
 
-  <%- include('partials/header') %>
+    <%- include('partials/header') %>
 
-  <main class="shop-page">
+    <main class="shop-page">
+      <h1 id="page-title">Alle <%= genderLabel %> (<%= totalFiltered %>)</h1>
 
-  <h1 id="page-title">Alle <%= genderLabel %> (<%= totalFiltered %>)</h1>
+      <!-- 🔘 Mobiele filterknop -->
+      <div class="filter-button-wrapper">
+        <button class="mobile-filter-toggle" id="open-filter">
+          <i data-lucide="sliders-horizontal"></i> Filter
+        </button>
+      </div>
 
-
-    <!-- 🔘 Mobiele filterknop -->
-    <div class="filter-button-wrapper">
-      <button class="mobile-filter-toggle" id="open-filter">
-        <i data-lucide="sliders-horizontal"></i> Filter
-      </button>
-    </div>
-
-    <div class="shop-container">
-      
-      <!-- 📂 Sidebar filters (desktop) -->
-      <aside class="desktop-filter-menu">
-        <% Object.entries(filters).forEach(([brand, models]) => { %>
+      <div class="shop-container">
+        <!-- 📂 Sidebar filters (desktop) -->
+        <aside class="desktop-filter-menu">
+          <% Object.entries(filters).forEach(([brand, models]) => { %>
           <details class="filter-dropdown">
             <summary>
               <%= brand.charAt(0).toUpperCase() + brand.slice(1) %>
@@ -47,36 +58,31 @@
             </summary>
             <div class="submodels">
               <label>
-                <input 
-                type="checkbox" 
-                class="brand-filter" 
-                value="<%= brand.toLowerCase() %>"
-                <%= selectedBrand === brand.toLowerCase() && !selectedModel ? "checked" : "" %>>
-                Bekijk alle <%= brand.charAt(0).toUpperCase() + brand.slice(1) %>
+                <input type="checkbox" class="brand-filter" value="<%=
+                brand.toLowerCase() %>" <%= selectedBrand ===
+                brand.toLowerCase() && !selectedModel ? "checked" : "" %>>
+                Bekijk alle <%= brand.charAt(0).toUpperCase() + brand.slice(1)
+                %>
               </label>
               <% Array.from(models).sort().forEach(model => { %>
-                <label>
-                  <input 
-                type="checkbox" 
-                class="model-filter" 
-                value="<%= model.toLowerCase() %>" 
-                data-brand="<%= brand.toLowerCase() %>"
+              <label>
+                <input type="checkbox" class="model-filter" value="<%=
+                model.toLowerCase() %>" data-brand="<%= brand.toLowerCase() %>"
                 <%= selectedModel === model.toLowerCase() ? "checked" : "" %>>
-
-                  <%= model %>
-                </label>
+                <%= model %>
+              </label>
               <% }) %>
             </div>
           </details>
-        <% }) %>
-      </aside>
+          <% }) %>
+        </aside>
 
-      <!-- 🛍️ Producten -->
-      <section id="product-list" class="product-list">
-        <div class="product-grid" id="product-grid">
-          <% producten.forEach(product => { %>
-            <a 
-              href="/product/<%= product.id %>" 
+        <!-- 🛍️ Producten -->
+        <section id="product-list" class="product-list">
+          <div class="product-grid" id="product-grid">
+            <% producten.forEach(product => { %>
+            <a
+              href="/product/<%= product.id %>"
               class="product-tile"
               data-brand="<%= product.brand.toLowerCase() %>"
               data-model="<%= product.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '') %>"
@@ -85,32 +91,36 @@
               <p class="product-name"><%= product.name %></p>
               <!-- <p class="product-price">€<%= product.price.toFixed(2) %></p> -->
             </a>
-          <% }) %>
-        </div>
+            <% }) %>
+          </div>
 
-        <% if (totalPages > 1) { %>
+          <% if (totalPages > 1) { %>
           <nav class="pagination">
             <% for (let i = 1; i <= totalPages; i++) { %>
-              <a href="#" class="pagination-link <%= i === currentPage ? 'active' : '' %>" data-page="<%= i %>"><%= i %></a>
+            <a
+              href="#"
+              class="pagination-link <%= i === currentPage ? 'active' : '' %>"
+              data-page="<%= i %>"
+              ><%= i %></a
+            >
             <% } %>
           </nav>
-        <% } %>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- 📱 Mobiele overlay filter -->
-  <div class="mobile-filter-overlay" id="mobile-filter">
-    <div class="mobile-filter-content">
-      <div class="mobile-filter-header">
-        <button id="close-filter" class="close-button">
-          <i data-lucide="x"></i>
-        </button>
+          <% } %>
+        </section>
       </div>
+    </main>
 
-      <div class="mobile-filter-scroll">
-        <% Object.entries(filters).forEach(([brand, models]) => { %>
+    <!-- 📱 Mobiele overlay filter -->
+    <div class="mobile-filter-overlay" id="mobile-filter">
+      <div class="mobile-filter-content">
+        <div class="mobile-filter-header">
+          <button id="close-filter" class="close-button">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <div class="mobile-filter-scroll">
+          <% Object.entries(filters).forEach(([brand, models]) => { %>
           <details class="filter-dropdown">
             <summary>
               <%= brand.charAt(0).toUpperCase() + brand.slice(1) %>
@@ -118,35 +128,31 @@
             </summary>
             <div class="submodels">
               <label>
-                <input 
-  type="checkbox" 
-  class="brand-filter" 
-  value="<%= brand.toLowerCase() %>"
-  <%= selectedBrand === brand.toLowerCase() && !selectedModel ? "checked" : "" %>>
-
-                Bekijk alle <%= brand.charAt(0).toUpperCase() + brand.slice(1) %>
+                <input type="checkbox" class="brand-filter" value="<%=
+                brand.toLowerCase() %>" <%= selectedBrand ===
+                brand.toLowerCase() && !selectedModel ? "checked" : "" %>>
+                Bekijk alle <%= brand.charAt(0).toUpperCase() + brand.slice(1)
+                %>
               </label>
               <% Array.from(models).sort().forEach(model => { %>
-                <label>
-                  <input 
-  type="checkbox" 
-  class="model-filter" 
-  value="<%= model.toLowerCase() %>" 
-  data-brand="<%= brand.toLowerCase() %>"
-  <%= selectedModel === model.toLowerCase() ? "checked" : "" %>>
-
-                  <%= model %>
-                </label>
+              <label>
+                <input type="checkbox" class="model-filter" value="<%=
+                model.toLowerCase() %>" data-brand="<%= brand.toLowerCase() %>"
+                <%= selectedModel === model.toLowerCase() ? "checked" : "" %>>
+                <%= model %>
+              </label>
               <% }) %>
             </div>
           </details>
-        <% }) %>
+          <% }) %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <%- include('partials/footer') %>
-  <script>lucide.createIcons();</script>
-</body>
-
+    <%- include('partials/footer') %>
+    <script>
+      lucide.createIcons();
+    </script>
+    <%- include('partials/whatsapp') %>
+  </body>
 </html>

@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
 import { Product } from "./interface";
+import serverless from "serverless-http";
 
 dotenv.config();
 
@@ -57,10 +58,12 @@ function extractSubfilters(producten: Product[]): Record<string, Set<string>> {
 function createSlug(name: string): string {
   return name
     .toLowerCase()
-    .replace(/\s+/g, "-") // spaties → koppeltekens
-    .replace(/[^a-z0-9\-]/g, "") // speciale tekens weg
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\-]/g, "")
     .trim();
 }
+
+// ================= ROUTES ==================
 
 app.get("/", (req, res) => {
   const dataDir = path.join(__dirname, "data");
@@ -132,7 +135,7 @@ app.get("/api/search-suggest", (req, res) => {
         (name.includes(query) || brand.includes(query) || model.includes(query))
       );
     })
-    .slice(0, 6); // max 6 suggesties
+    .slice(0, 6);
 
   res.json(resultaten);
 });
@@ -143,7 +146,9 @@ app.get("/api/sneakers", (req, res) => {
 
   let sneakers = alleProducten.filter((p) => !p.hidden);
 
-  const brandsQuery = req.query.brands?.toString().toLowerCase();
+  const brandQuery =
+    req.query.brand?.toString().toLowerCase() ||
+    req.query.brands?.toString().toLowerCase();
   const modelQuery = req.query.model?.toString().toLowerCase();
   const genderQuery = req.query.gender?.toString().toLowerCase();
 
@@ -167,8 +172,8 @@ app.get("/api/sneakers", (req, res) => {
     );
   }
 
-  if (brandsQuery) {
-    const brands = brandsQuery.split(",").map((b) => b.trim());
+  if (brandQuery) {
+    const brands = brandQuery.split(",").map((b) => b.trim());
     sneakers = sneakers.filter(
       (p) =>
         typeof p.brand === "string" &&
@@ -189,6 +194,7 @@ app.get("/api/sneakers", (req, res) => {
   const offset = (page - 1) * limit;
 
   const paginated = sneakers.slice(offset, offset + limit);
+
   res.json({
     producten: paginated,
     totalFiltered: sneakers.length,
@@ -246,11 +252,10 @@ app.get("/shop", (req, res) => {
   const paginated = filtered.slice(offset, offset + limit);
   const totalPages = Math.ceil(totalFiltered / limit);
 
-  const filters = extractSubfilters(alleProducten); // 🔁 let op, ALLE producten
+  const filters = extractSubfilters(alleProducten);
   const selectedBrand = brand || null;
   const selectedModel = model || null;
 
-  // ✅ Titel dynamisch op basis van filters
   let genderLabel = "sneakers";
   if (selectedModel) {
     genderLabel = `${selectedModel}`;
@@ -289,7 +294,6 @@ app.get("/product/:id", (req, res) => {
     (p) => p.model === product.model && p.id !== product.id
   );
 
-  // 🔍 Related: zelfde merk, ander model en niet het huidige product
   let related = alleProducten.filter(
     (p) =>
       p.brand === product.brand &&
@@ -297,16 +301,13 @@ app.get("/product/:id", (req, res) => {
       p.id !== product.id
   );
 
-  // 🔀 Shuffle array (Fisher-Yates)
   related = related.sort(() => Math.random() - 0.5);
-
-  // ✂️ Beperk tot max. 8 producten
   related = related.slice(0, 8);
 
   res.render("product-detail", {
     product,
     variants,
-    related, // 👈 Stuur mee naar je EJS
+    related,
   });
 });
 
@@ -318,7 +319,16 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+// ============== LOCAL vs VERCEL ==============
+
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+
+// ✅ Alleen lokaal starten met .listen
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+// ✅ Export voor Vercel serverless
+export const handler = serverless(app);
