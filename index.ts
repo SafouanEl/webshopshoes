@@ -16,7 +16,6 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT ?? 3000);
 
-// ================= HELPERS ==================
 function getAllProducts(dirPath: string): Product[] {
   let producten: Product[] = [];
   const items = fs.readdirSync(dirPath);
@@ -55,16 +54,13 @@ function extractSubfilters(producten: Product[]): Record<string, Set<string>> {
   }
   return result;
 }
-
 function createSlug(name: string): string {
   return name
     .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9\-]/g, "")
+    .replace(/\s+/g, "-") // spaties → koppeltekens
+    .replace(/[^a-z0-9\-]/g, "") // speciale tekens weg
     .trim();
 }
-
-// ================= ROUTES ==================
 
 app.get("/", (req, res) => {
   const dataDir = path.join(__dirname, "data");
@@ -136,7 +132,7 @@ app.get("/api/search-suggest", (req, res) => {
         (name.includes(query) || brand.includes(query) || model.includes(query))
       );
     })
-    .slice(0, 6);
+    .slice(0, 6); // max 6 suggesties
 
   res.json(resultaten);
 });
@@ -145,14 +141,17 @@ app.get("/api/sneakers", (req, res) => {
   const dataDir = path.join(__dirname, "data");
   const alleProducten: Product[] = getAllProducts(dataDir);
 
+  // Alleen zichtbare producten
   let sneakers = alleProducten.filter((p) => !p.hidden);
 
+  // Queries
   const brandQuery =
     req.query.brand?.toString().toLowerCase() ||
     req.query.brands?.toString().toLowerCase();
   const modelQuery = req.query.model?.toString().toLowerCase();
   const genderQuery = req.query.gender?.toString().toLowerCase();
 
+  // ✅ Gender mapping (synoniemen)
   const genderMap: Record<string, string> = {
     vrouw: "dames",
     dames: "dames",
@@ -163,6 +162,7 @@ app.get("/api/sneakers", (req, res) => {
 
   const gender = genderQuery && genderMap[genderQuery];
 
+  // ✅ Filter op gender
   if (gender) {
     sneakers = sneakers.filter((p) =>
       typeof p.gender === "string"
@@ -173,6 +173,7 @@ app.get("/api/sneakers", (req, res) => {
     );
   }
 
+  // ✅ Filter op merk (één of meerdere)
   if (brandQuery) {
     const brands = brandQuery.split(",").map((b) => b.trim());
     sneakers = sneakers.filter(
@@ -182,6 +183,7 @@ app.get("/api/sneakers", (req, res) => {
     );
   }
 
+  // ✅ Filter op model
   if (modelQuery) {
     sneakers = sneakers.filter(
       (p) =>
@@ -190,12 +192,14 @@ app.get("/api/sneakers", (req, res) => {
     );
   }
 
+  // ✅ Pagination
   const page = parseInt(req.query.page as string) || 1;
   const limit = 12;
   const offset = (page - 1) * limit;
 
   const paginated = sneakers.slice(offset, offset + limit);
 
+  // ✅ Response
   res.json({
     producten: paginated,
     totalFiltered: sneakers.length,
@@ -253,10 +257,11 @@ app.get("/shop", (req, res) => {
   const paginated = filtered.slice(offset, offset + limit);
   const totalPages = Math.ceil(totalFiltered / limit);
 
-  const filters = extractSubfilters(alleProducten);
+  const filters = extractSubfilters(alleProducten); // 🔁 let op, ALLE producten
   const selectedBrand = brand || null;
   const selectedModel = model || null;
 
+  // ✅ Titel dynamisch op basis van filters
   let genderLabel = "sneakers";
   if (selectedModel) {
     genderLabel = `${selectedModel}`;
@@ -295,6 +300,7 @@ app.get("/product/:id", (req, res) => {
     (p) => p.model === product.model && p.id !== product.id
   );
 
+  // 🔍 Related: zelfde merk, ander model en niet het huidige product
   let related = alleProducten.filter(
     (p) =>
       p.brand === product.brand &&
@@ -302,13 +308,16 @@ app.get("/product/:id", (req, res) => {
       p.id !== product.id
   );
 
+  // 🔀 Shuffle array (Fisher-Yates)
   related = related.sort(() => Math.random() - 0.5);
+
+  // ✂️ Beperk tot max. 8 producten
   related = related.slice(0, 8);
 
   res.render("product-detail", {
     product,
     variants,
-    related,
+    related, // 👈 Stuur mee naar je EJS
   });
 });
 
@@ -320,17 +329,11 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-// ============== EXPORTS ==============
-
-// 👇 Voor lokaal draaien
 if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 3000;
-  app.listen(PORT, () =>
-    console.log(`Server running locally on http://localhost:${PORT}`)
-  );
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
 }
 
-// 👇 Voor Vercel
-import serverless from "serverless-http";
-export const handler = serverless(app);
 export default app;
