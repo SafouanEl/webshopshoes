@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
 import { Product } from "./interface";
-import serverless from "serverless-http";
 
 dotenv.config();
 
@@ -17,6 +16,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT ?? 3000);
 
+// ================= HELPERS ==================
 function getAllProducts(dirPath: string): Product[] {
   let producten: Product[] = [];
   const items = fs.readdirSync(dirPath);
@@ -55,6 +55,7 @@ function extractSubfilters(producten: Product[]): Record<string, Set<string>> {
   }
   return result;
 }
+
 function createSlug(name: string): string {
   return name
     .toLowerCase()
@@ -319,16 +320,17 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-// ============== LOCAL vs VERCEL ==============
+// ============== EXPORTS ==============
 
-const PORT = process.env.PORT || 3000;
-
-// ✅ Alleen lokaal starten met .listen
+// 👇 Voor lokaal draaien
 if (process.env.NODE_ENV !== "production") {
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () =>
+    console.log(`Server running locally on http://localhost:${PORT}`)
+  );
 }
 
-// ✅ Export voor Vercel serverless
+// 👇 Voor Vercel
+import serverless from "serverless-http";
 export const handler = serverless(app);
+export default app;
